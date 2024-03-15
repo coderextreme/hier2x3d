@@ -13,6 +13,7 @@ my $site = "";
 my %siteid = ();
 my %listedSites = ();
 
+
 my $trailing_joints = "";
 my $trailing_segments = "";
 my $trailing_sites = "";
@@ -188,6 +189,13 @@ sub listSites() {
 				print OUTPUT ">\n";
 				print OUTPUT " " x ($nxt+4)."<TouchSensor description='HAnimSite ".$siteid{$site.$suffix}." ".$site.$suffix."'/>\n";
 				print OUTPUT " " x ($nxt+4)."<Shape USE='HAnimSiteShape'/>\n";
+				print OUTPUT " " x ($nxt+4)."<Billboard>\n";
+				print OUTPUT " " x ($nxt+5)."<Shape>\n";
+                            	print OUTPUT " " x ($nxt+6)."<Text string='\"$siteid{$site.$suffix}\"'>\n";
+                            	print OUTPUT " " x ($nxt+7)."<FontStyle size='0.035'/>\n";
+                            	print OUTPUT " " x ($nxt+6)."</Text>\n";
+                        	print OUTPUT " " x ($nxt+5)."</Shape>\n";
+				print OUTPUT " " x ($nxt+4)."</Billboard>\n";
 
 				print OUTPUT " " x ($nxt+3)."</HAnimSite>\n";
 				$trailing_sites .= "<HAnimSite USE='hanim_".$site.$suffix."' containerField='sites'/>\n";
@@ -367,19 +375,11 @@ print OUTPUT << "HUMANHEADER";
  
 <Group> <!-- DEFS for markers of skeleton joints, segments, and sites --> 
  <Transform translation='0 0 0' scale='1 1 1'>
-  <Transform translation='0 2 0' scale='1 1 1'>
-   <Shape DEF='HAnimRootShape'>
-    <Sphere radius='0.02'  />
-     <Appearance>
-      <Material DEF='HAnimRootMaterial' diffuseColor='0.8 0 0' transparency='0.3'/>
-     </Appearance>
-    </Shape>
-  </Transform>
   <Transform translation='0 2.1 0' scale='1 1 1'>
    <Shape DEF='HAnimJointShape'>
     <Sphere radius='0.02' />
      <Appearance>
-      <Material DEF='HAnimJointMaterial' diffuseColor='0 0 0.8' transparency='0.3'/>
+      <Material DEF='HAnimJointMaterial' diffuseColor='0 0 0' transparency='0'/>
        </Appearance>
    </Shape>
   </Transform>
@@ -398,7 +398,7 @@ print OUTPUT << "HUMANHEADER";
      <Coordinate point='0 0.01 0 -0.01 0 0 0 0 0.01 0.01 0 0 0 0 -0.01 0 -0.01 0'/>
     </IndexedFaceSet>
      <Appearance>
-      <Material diffuseColor='1 1 0' transparency='0.3'/>
+      <Material diffuseColor='1 1 1' transparency='1'/>
      </Appearance>
    </Shape>
   </Transform>
@@ -407,7 +407,7 @@ print OUTPUT << "HUMANHEADER";
 
 <NavigationInfo speed='1.5' type='"EXAMINE" "ANY"'/>
 
-<Viewpoint centerOfRotation='0 0 0' description='default'/> 
+<Viewpoint position='0 1 3' centerOfRotation='0 1 0' description='default'/> 
 
 <HAnimHumanoid DEF='hanim_HAnim'  info='"humanoidVersion=2.0"' name='HAnim' scale='1 1 1' translation='0 0 0' version='2.0'>
           <!-- <LOD containerField='skin'> (Switch whichChoice='0' and LOD parents each already work in view3dscene) -->
@@ -418,7 +418,7 @@ print OUTPUT << "HUMANHEADER";
             </IndexedFaceSet>
             <Appearance DEF='SkinAppearance'>
               <ImageTexture DEF='zBlueSpiralBkg2' description='Blue Spiral Pattern' url='"./data/zBlueSpiralBkg2.gif" "zBlueSpiralBkg2.gif" "https://www.web3d.org/x3d/content/examples/HumanoidAnimation/Skin/zBlueSpiralBkg2.gif"'/>
-              <Material DEF='SkinMaterial' ambientIntensity='0.6' diffuseColor='1 1 1' shininess='0.6' transparency='0.2'/>
+              <Material DEF='SkinMaterial' ambientIntensity='0.6' diffuseColor='1 1 1' shininess='0.6' transparency='1'/>
             </Appearance>
           </Shape>
           <!-- </LOD> -->
