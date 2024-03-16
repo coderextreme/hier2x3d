@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="Java JSON Schema validation" default="default" basedir=".">
+    <description>Builds, tests, and runs Validate for JSON validation.</description>
+    <property name="fork"         value="true"/>
+    <!--
+    <property name="examples"     value="/x3d-code/www.web3d.org/x3d/content/examples"/>
+    -->
+    <property name="examples"     value="examples"/>
+    <property name="classpath"     value="C:/Users/john/pythonSAI/X3DJSAIL.4.0.full.jar;."/>
+
+<taskdef resource="net/sf/antcontrib/antcontrib.properties">
+  <classpath>
+    <pathelement location="C:/apache-ant-1.10.12-bin/apache-ant-1.10.12/lib/ant-contrib-1.0b3.jar"/>
+  </classpath>
+</taskdef>
+
+    <target name="default" description="generate humanoids">
+	<echo message="Building humanoids with perl:"/>
+	<echo message="Standard hierarchies"/>
+	<echo message="LOA1"/>
+	<exec executable="perl">
+                <arg value="hier2x3d.pl"/>
+                <arg value="../standards/Hier1.txt"/>
+                <arg value="../results/Humanoid1.x3d"/>
+                <arg value="1"/>
+        </exec>
+	<echo message="LOA2"/>
+	<exec executable="perl">
+                <arg value="hier2x3d.pl"/>
+                <arg value="../standards/Hier2.txt"/>
+                <arg value="../results/Humanoid2.x3d"/>
+                <arg value="2"/>
+        </exec>
+	<echo message="LOA3"/>
+	<exec executable="perl">
+                <arg value="hier2x3d.pl"/>
+                <arg value="../standards/Hier3.txt"/>
+                <arg value="../results/Humanoid3.x3d"/>
+                <arg value="3"/>
+        </exec>
+	<echo message="LOA4"/>
+	<exec executable="perl">
+                <arg value="hier2x3d.pl"/>
+                <arg value="../standards/Hier4.txt"/>
+                <arg value="../results/Humanoid4.x3d"/>
+                <arg value="4"/>
+        </exec>
+	<echo message="LOA4-corrected"/>
+	<exec executable="perl">
+                <arg value="hier2x3d.pl"/>
+                <arg value="../standards/Hierarchy.txt"/>
+                <arg value="../results/StandardHumanoid.x3d"/>
+                <arg value="4"/>
+        </exec>
+	<echo message="Don's hierarchy"/>
+	<exec executable="perl">
+                <arg value="hier2x3d.pl"/>
+		<arg value="/c/x3d-code/www.web3d.org/x3d/stylesheets/HAnimLOA4HierarchyTable.txt"/>
+                <arg value="../results/DonHumanoid.x3d"/>
+                <arg value="4"/>
+        </exec>
+    </target>
+    <target name="joe" description="joe generate humanoids">
+	<echo message="Joe LOA0-corrected"/>
+	<exec executable="perl">
+                <arg value="joehierx3d.pl"/>
+                <arg value="../standards/Hier0.txt"/>
+                <arg value="../results/Humanoid0J.x3d"/>
+                <arg value="0"/>
+        </exec>
+	<echo message="Joe LOA1-corrected"/>
+	<exec executable="perl">
+                <arg value="joehierx3d.pl"/>
+                <arg value="../standards/Hier1.txt"/>
+                <arg value="../results/Humanoid1J.x3d"/>
+                <arg value="1"/>
+        </exec>
+	<echo message="Joe LOA2-corrected"/>
+	<exec executable="perl">
+                <arg value="joehierx3d.pl"/>
+                <arg value="../standards/Hier2.txt"/>
+                <arg value="../results/Humanoid2J.x3d"/>
+                <arg value="2"/>
+        </exec>
+	<echo message="Joe LOA3-corrected"/>
+	<exec executable="perl">
+                <arg value="joehierx3d.pl"/>
+                <arg value="../standards/Hier3.txt"/>
+                <arg value="../results/Humanoid3J.x3d"/>
+                <arg value="3"/>
+        </exec>
+	<echo message="Joe LOA4-corrected"/>
+	<exec executable="perl">
+                <arg value="joehierx3d.pl"/>
+                <arg value="../standards/Hier4.txt"/>
+                <arg value="../results/Humanoid4J.x3d"/>
+                <arg value="4"/>
+        </exec>
+    </target>
+</project>
