@@ -17,6 +17,13 @@
     <target name="default" description="generate humanoids">
 	<echo message="Building humanoids with perl:"/>
 	<echo message="Standard hierarchies"/>
+	<echo message="LOA0"/>
+	<exec executable="perl">
+                <arg value="hier2x3d.pl"/>
+                <arg value="../standards/Hier0.txt"/>
+                <arg value="./results/Humanoid0.x3d"/>
+                <arg value="0"/>
+        </exec>
 	<echo message="LOA1"/>
 	<exec executable="perl">
                 <arg value="hier2x3d.pl"/>
@@ -59,8 +66,6 @@
                 <arg value="./results/DonHumanoid.x3d"/>
                 <arg value="4"/>
         </exec>
-    </target>
-    <target name="joe" description="joe generate humanoids">
 	<echo message="Joe LOA0-corrected"/>
 	<exec executable="perl">
                 <arg value="joehierx3d.pl"/>
@@ -94,6 +99,20 @@
                 <arg value="joehierx3d.pl"/>
                 <arg value="../standards/Hier4.txt"/>
                 <arg value="./results/Humanoid4J.x3d"/>
+                <arg value="4"/>
+        </exec>
+	<echo message="Joe LOA4-corrected Standard"/>
+	<exec executable="perl">
+                <arg value="joehierx3d.pl"/>
+                <arg value="../standards/Hierarchy.txt"/>
+                <arg value="./results/StandardHumanoidJ.x3d"/>
+                <arg value="4"/>
+        </exec>
+	<echo message="Joe Don's hierarchy"/>
+	<exec executable="perl">
+                <arg value="joehierx3d.pl"/>
+		<arg value="/c/x3d-code/www.web3d.org/x3d/stylesheets/HAnimLOA4HierarchyTable.txt"/>
+                <arg value="./results/DonHumanoidJ.x3d"/>
                 <arg value="4"/>
         </exec>
     </target>

@@ -414,56 +414,56 @@
                  </Shape>
                 </Billboard>
                </HAnimSite>
-               <HAnimSite DEF='hanim_l_tarsal_distal_phalanx_1' name='l_tarsal_distal_phalanx_1'>
-                <TouchSensor description='HAnimSite 111 l_tarsal_distal_phalanx_1'/>
+               <HAnimSite DEF='hanim_l_tarsal_distal_phalanx_1_tip' name='l_tarsal_distal_phalanx_1_tip'>
+                <TouchSensor description='HAnimSite  l_tarsal_distal_phalanx_1_tip'/>
                 <Shape USE='HAnimSiteShape'/>
                 <Billboard>
                  <Shape>
-                  <Text string='"111"'>
+                  <Text string='""'>
                    <FontStyle size='0.035'/>
                   </Text>
                  </Shape>
                 </Billboard>
                </HAnimSite>
-               <HAnimSite DEF='hanim_l_tarsal_distal_phalanx_2' name='l_tarsal_distal_phalanx_2' translation='0.1195 0.0079 0.1433'>
-                <TouchSensor description='HAnimSite 112 l_tarsal_distal_phalanx_2'/>
+               <HAnimSite DEF='hanim_l_tarsal_distal_phalanx_2_tip' name='l_tarsal_distal_phalanx_2_tip' translation='0.1195 0.0079 0.1433'>
+                <TouchSensor description='HAnimSite  l_tarsal_distal_phalanx_2_tip'/>
                 <Shape USE='HAnimSiteShape'/>
                 <Billboard>
                  <Shape>
-                  <Text string='"112"'>
+                  <Text string='""'>
                    <FontStyle size='0.035'/>
                   </Text>
                  </Shape>
                 </Billboard>
                </HAnimSite>
-               <HAnimSite DEF='hanim_l_tarsal_distal_phalanx_3' name='l_tarsal_distal_phalanx_3'>
-                <TouchSensor description='HAnimSite 113 l_tarsal_distal_phalanx_3'/>
+               <HAnimSite DEF='hanim_l_tarsal_distal_phalanx_3_tip' name='l_tarsal_distal_phalanx_3_tip'>
+                <TouchSensor description='HAnimSite  l_tarsal_distal_phalanx_3_tip'/>
                 <Shape USE='HAnimSiteShape'/>
                 <Billboard>
                  <Shape>
-                  <Text string='"113"'>
+                  <Text string='""'>
                    <FontStyle size='0.035'/>
                   </Text>
                  </Shape>
                 </Billboard>
                </HAnimSite>
-               <HAnimSite DEF='hanim_l_tarsal_distal_phalanx_4' name='l_tarsal_distal_phalanx_4'>
-                <TouchSensor description='HAnimSite 114 l_tarsal_distal_phalanx_4'/>
+               <HAnimSite DEF='hanim_l_tarsal_distal_phalanx_4_tip' name='l_tarsal_distal_phalanx_4_tip'>
+                <TouchSensor description='HAnimSite  l_tarsal_distal_phalanx_4_tip'/>
                 <Shape USE='HAnimSiteShape'/>
                 <Billboard>
                  <Shape>
-                  <Text string='"114"'>
+                  <Text string='""'>
                    <FontStyle size='0.035'/>
                   </Text>
                  </Shape>
                 </Billboard>
                </HAnimSite>
-               <HAnimSite DEF='hanim_l_tarsal_distal_phalanx_5' name='l_tarsal_distal_phalanx_5'>
-                <TouchSensor description='HAnimSite 115 l_tarsal_distal_phalanx_5'/>
+               <HAnimSite DEF='hanim_l_tarsal_distal_phalanx_5_tip' name='l_tarsal_distal_phalanx_5_tip'>
+                <TouchSensor description='HAnimSite  l_tarsal_distal_phalanx_5_tip'/>
                 <Shape USE='HAnimSiteShape'/>
                 <Billboard>
                  <Shape>
-                  <Text string='"115"'>
+                  <Text string='""'>
                    <FontStyle size='0.035'/>
                   </Text>
                  </Shape>
@@ -668,56 +668,56 @@
                  </Shape>
                 </Billboard>
                </HAnimSite>
-               <HAnimSite DEF='hanim_r_tarsal_distal_phalanx_1' name='r_tarsal_distal_phalanx_1'>
-                <TouchSensor description='HAnimSite 116 r_tarsal_distal_phalanx_1'/>
+               <HAnimSite DEF='hanim_r_tarsal_distal_phalanx_1_tip' name='r_tarsal_distal_phalanx_1_tip'>
+                <TouchSensor description='HAnimSite  r_tarsal_distal_phalanx_1_tip'/>
                 <Shape USE='HAnimSiteShape'/>
                 <Billboard>
                  <Shape>
-                  <Text string='"116"'>
+                  <Text string='""'>
                    <FontStyle size='0.035'/>
                   </Text>
                  </Shape>
                 </Billboard>
                </HAnimSite>
-               <HAnimSite DEF='hanim_r_tarsal_distal_phalanx_2' name='r_tarsal_distal_phalanx_2' translation='-0.0883 0.0134 0.1383'>
-                <TouchSensor description='HAnimSite 117 r_tarsal_distal_phalanx_2'/>
+               <HAnimSite DEF='hanim_r_tarsal_distal_phalanx_2_tip' name='r_tarsal_distal_phalanx_2_tip' translation='-0.0883 0.0134 0.1383'>
+                <TouchSensor description='HAnimSite  r_tarsal_distal_phalanx_2_tip'/>
                 <Shape USE='HAnimSiteShape'/>
                 <Billboard>
                  <Shape>
-                  <Text string='"117"'>
+                  <Text string='""'>
                    <FontStyle size='0.035'/>
                   </Text>
                  </Shape>
                 </Billboard>
                </HAnimSite>
-               <HAnimSite DEF='hanim_r_tarsal_distal_phalanx_3' name='r_tarsal_distal_phalanx_3'>
-                <TouchSensor description='HAnimSite 118 r_tarsal_distal_phalanx_3'/>
+               <HAnimSite DEF='hanim_r_tarsal_distal_phalanx_3_tip' name='r_tarsal_distal_phalanx_3_tip'>
+                <TouchSensor description='HAnimSite  r_tarsal_distal_phalanx_3_tip'/>
                 <Shape USE='HAnimSiteShape'/>
                 <Billboard>
                  <Shape>
-                  <Text string='"118"'>
+                  <Text string='""'>
                    <FontStyle size='0.035'/>
                   </Text>
                  </Shape>
                 </Billboard>
                </HAnimSite>
-               <HAnimSite DEF='hanim_r_tarsal_distal_phalanx_4' name='r_tarsal_distal_phalanx_4'>
-                <TouchSensor description='HAnimSite 119 r_tarsal_distal_phalanx_4'/>
+               <HAnimSite DEF='hanim_r_tarsal_distal_phalanx_4_tip' name='r_tarsal_distal_phalanx_4_tip'>
+                <TouchSensor description='HAnimSite  r_tarsal_distal_phalanx_4_tip'/>
                 <Shape USE='HAnimSiteShape'/>
                 <Billboard>
                  <Shape>
-                  <Text string='"119"'>
+                  <Text string='""'>
                    <FontStyle size='0.035'/>
                   </Text>
                  </Shape>
                 </Billboard>
                </HAnimSite>
-               <HAnimSite DEF='hanim_r_tarsal_distal_phalanx_5' name='r_tarsal_distal_phalanx_5'>
-                <TouchSensor description='HAnimSite 120 r_tarsal_distal_phalanx_5'/>
+               <HAnimSite DEF='hanim_r_tarsal_distal_phalanx_5_tip' name='r_tarsal_distal_phalanx_5_tip'>
+                <TouchSensor description='HAnimSite  r_tarsal_distal_phalanx_5_tip'/>
                 <Shape USE='HAnimSiteShape'/>
                 <Billboard>
                  <Shape>
-                  <Text string='"120"'>
+                  <Text string='""'>
                    <FontStyle size='0.035'/>
                   </Text>
                  </Shape>
@@ -1093,12 +1093,12 @@
                    </Shape>
                   </Billboard>
                  </HAnimSite>
-                 <HAnimSite DEF='hanim_l_axilla_distal' name='l_axilla_distal' translation='0.1706 1.4072 -0.0875'>
-                  <TouchSensor description='HAnimSite 17 l_axilla_distal'/>
+                 <HAnimSite DEF='hanim_l_axilla_distal_pt' name='l_axilla_distal_pt' translation='0.1706 1.4072 -0.0875'>
+                  <TouchSensor description='HAnimSite  l_axilla_distal_pt'/>
                   <Shape USE='HAnimSiteShape'/>
                   <Billboard>
                    <Shape>
-                    <Text string='"17"'>
+                    <Text string='""'>
                      <FontStyle size='0.035'/>
                     </Text>
                    </Shape>
@@ -1578,12 +1578,12 @@
                    </Shape>
                   </Billboard>
                  </HAnimSite>
-                 <HAnimSite DEF='hanim_r_axilla_distal' name='r_axilla_distal' translation='-0.1603 1.4098 -0.0826'>
-                  <TouchSensor description='HAnimSite 22 r_axilla_distal'/>
+                 <HAnimSite DEF='hanim_r_axilla_distal_pt' name='r_axilla_distal_pt' translation='-0.1603 1.4098 -0.0826'>
+                  <TouchSensor description='HAnimSite  r_axilla_distal_pt'/>
                   <Shape USE='HAnimSiteShape'/>
                   <Billboard>
                    <Shape>
-                    <Text string='"22"'>
+                    <Text string='""'>
                      <FontStyle size='0.035'/>
                     </Text>
                    </Shape>
@@ -2196,11 +2196,11 @@
 <HAnimSite USE='hanim_l_sphyrion' containerField='sites'/>
 <HAnimSite USE='hanim_l_metatarsal_phalanx_1' containerField='sites'/>
 <HAnimSite USE='hanim_l_metatarsal_phalanx_5' containerField='sites'/>
-<HAnimSite USE='hanim_l_tarsal_distal_phalanx_1' containerField='sites'/>
-<HAnimSite USE='hanim_l_tarsal_distal_phalanx_2' containerField='sites'/>
-<HAnimSite USE='hanim_l_tarsal_distal_phalanx_3' containerField='sites'/>
-<HAnimSite USE='hanim_l_tarsal_distal_phalanx_4' containerField='sites'/>
-<HAnimSite USE='hanim_l_tarsal_distal_phalanx_5' containerField='sites'/>
+<HAnimSite USE='hanim_l_tarsal_distal_phalanx_1_tip' containerField='sites'/>
+<HAnimSite USE='hanim_l_tarsal_distal_phalanx_2_tip' containerField='sites'/>
+<HAnimSite USE='hanim_l_tarsal_distal_phalanx_3_tip' containerField='sites'/>
+<HAnimSite USE='hanim_l_tarsal_distal_phalanx_4_tip' containerField='sites'/>
+<HAnimSite USE='hanim_l_tarsal_distal_phalanx_5_tip' containerField='sites'/>
 <HAnimSite USE='hanim_r_femoral_lateral_epicondyles' containerField='sites'/>
 <HAnimSite USE='hanim_r_femoral_medial_epicondyles' containerField='sites'/>
 <HAnimSite USE='hanim_r_knee_crease' containerField='sites'/>
@@ -2212,11 +2212,11 @@
 <HAnimSite USE='hanim_r_sphyrion' containerField='sites'/>
 <HAnimSite USE='hanim_r_metatarsal_phalanx_1' containerField='sites'/>
 <HAnimSite USE='hanim_r_metatarsal_phalanx_5' containerField='sites'/>
-<HAnimSite USE='hanim_r_tarsal_distal_phalanx_1' containerField='sites'/>
-<HAnimSite USE='hanim_r_tarsal_distal_phalanx_2' containerField='sites'/>
-<HAnimSite USE='hanim_r_tarsal_distal_phalanx_3' containerField='sites'/>
-<HAnimSite USE='hanim_r_tarsal_distal_phalanx_4' containerField='sites'/>
-<HAnimSite USE='hanim_r_tarsal_distal_phalanx_5' containerField='sites'/>
+<HAnimSite USE='hanim_r_tarsal_distal_phalanx_1_tip' containerField='sites'/>
+<HAnimSite USE='hanim_r_tarsal_distal_phalanx_2_tip' containerField='sites'/>
+<HAnimSite USE='hanim_r_tarsal_distal_phalanx_3_tip' containerField='sites'/>
+<HAnimSite USE='hanim_r_tarsal_distal_phalanx_4_tip' containerField='sites'/>
+<HAnimSite USE='hanim_r_tarsal_distal_phalanx_5_tip' containerField='sites'/>
 <HAnimSite USE='hanim_navel' containerField='sites'/>
 <HAnimSite USE='hanim_waist_preferred_anterior' containerField='sites'/>
 <HAnimSite USE='hanim_waist_preferred_posterior' containerField='sites'/>
@@ -2237,7 +2237,7 @@
 <HAnimSite USE='hanim_suprasternale' containerField='sites'/>
 <HAnimSite USE='hanim_adams_apple' containerField='sites'/>
 <HAnimSite USE='hanim_l_acromion' containerField='sites'/>
-<HAnimSite USE='hanim_l_axilla_distal' containerField='sites'/>
+<HAnimSite USE='hanim_l_axilla_distal_pt' containerField='sites'/>
 <HAnimSite USE='hanim_l_axilla_posterior_folds' containerField='sites'/>
 <HAnimSite USE='hanim_l_axilla_proximal' containerField='sites'/>
 <HAnimSite USE='hanim_l_clavicale' containerField='sites'/>
@@ -2252,7 +2252,7 @@
 <HAnimSite USE='hanim_l_metacarpal_phalanx_3' containerField='sites'/>
 <HAnimSite USE='hanim_l_metacarpal_phalanx_5' containerField='sites'/>
 <HAnimSite USE='hanim_r_acromion' containerField='sites'/>
-<HAnimSite USE='hanim_r_axilla_distal' containerField='sites'/>
+<HAnimSite USE='hanim_r_axilla_distal_pt' containerField='sites'/>
 <HAnimSite USE='hanim_r_axilla_posterior_folds' containerField='sites'/>
 <HAnimSite USE='hanim_r_axilla_proximal' containerField='sites'/>
 <HAnimSite USE='hanim_r_clavicale' containerField='sites'/>
