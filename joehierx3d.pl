@@ -166,18 +166,18 @@ sub listSites() {
 	foreach my $site (&uniq(sort keys %parents)) {
 		my $suffix = "";
 		if ($parents{$site} eq $segment) { # is the parent of the site the current segment?
-#			if ($site =~ /distal_phalanx/) {
-#				$suffix = "_tip";
-#			} elsif ($site =~ /tongue/) {
-#				$suffix = "_tip";
-#			} elsif ($site =~ /eye/) {
-#				$suffix = "_tip";
-#			} elsif ($site =~ /axilla_distal/) {
-#				$suffix = "_pt";
+			if ($site =~ /distal_phalanx/) {
+				$suffix = "_tip";
+			} elsif ($site =~ /tongue/) {
+				$suffix = "_tip";
+			} elsif ($site =~ /eye/) {
+				$suffix = "_tip";
+			} elsif ($site =~ /axilla_distal/) {
+				$suffix = "_pt";
 #			} else {
 #				# $suffix = "_pt";
 #				$suffix = "";
-#			}
+			}
 			if (not $listedSites{$site.$suffix}) {
 				$listedSites{$site.$suffix} = 1;
 				print OUTPUT " " x ($nxt+3)."<HAnimSite DEF='hanim_".$site.$suffix."' name='".$site.$suffix."'";
