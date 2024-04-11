@@ -1,3 +1,326 @@
+#!/bin/perl
+
+# Genrerate HAnim humanoid from hierarchy
+
+@path = ();
+$cur = 0;
+$nxt = 0;
+%joints = {};
+%sites = {};
+%alias = {};
+$parents = {};
+$site = "";
+
+
+my $trailing_joints = "";
+my $trailing_segments = "";
+my $trailing_sites = "";
+
+
+sub printXML {
+	my($prev) = @_;  # $prev is $child
+	$prev->{line} =~ /([ |]*)(.*) : (.*)/;
+	my $parent_indent = length($1);
+	my $parent_joint = $2;
+	my $parent_segment = $3;
+	my $nxt = length($1);
+	# print "$1$2 : $3\n";
+	my $cur = @path[@path-1];
+	while ($nxt < $cur) {
+		$cur = pop @path;
+	}
+
+	undef ($htrans);
+	if ($parent_joint eq "l_talocrural") {
+		$htrans =  "<Transform scale='0.15 0.15 0.15' translation='0.08 0.06 -0.025' rotation='1 0 0 -1.57'> <!-- Transform left foot -->\n";
+		$htrans .= "<Transform> <!-- Empty Transform left foot -->\n";
+		$dopaw = 1;
+	} elsif ($parent_joint eq "r_talocrural") {
+		$htrans = "<Transform scale='0.15 0.15 0.15' translation='-0.05 0.06 -0.025' rotation='1 0 0 -1.57'><!-- Transform right foot -->\n";
+		$htrans .= "<Transform> <!-- Empty Transform right foot -->\n";
+		$dopaw = 1;
+	} elsif ($parent_joint eq "l_radiocarpal") {
+		$htrans = "<Transform scale='0.2 0.2 0.2' translation='0.20 0.85 -0.05' rotation='0 0 1 -3.14'> <!-- Transform left hand -->\n";
+		$htrans .= "<Transform rotation='0 1 0 -1.57'> <!-- Transform left hand -->\n";
+		$dopaw = 1;
+	} elsif ($parent_joint eq "r_radiocarpal") {
+		$htrans = "<Transform scale='0.2 0.2 0.2' translation='-0.20 0.85 -0.05' rotation='0 0 1 -3.14'> <!-- Transform right hand -->\n";
+		$htrans .= "<Transform rotation='0 1 0 1.57'> <!-- Transform right hand -->\n";
+		$dopaw = 1;
+	} else {
+		$dopaw = 0;
+	}
+
+	{
+
+
+		$trailing_joints .= "<HAnimJoint USE='hanim_".$parent_joint."' containerField='joints'/>\n";
+		print OUTPUT " " x $nxt."<HAnimJoint DEF='hanim_".$parent_joint."' name='".$parent_joint."'";
+		if ($nxt <= 1) {
+			print OUTPUT " " x $nxt." containerField='skeleton'"
+		}
+		if ($joints{$parent_joint} ne "") {
+			$cenpj = $joints{$parent_joint};
+			print OUTPUT " center='".$cenpj."' skinCoordIndex=' 0 ' skinCoordWeight=' 0 '";
+		} else {
+			#  $cenpj = "0 1 0";
+		}
+		print OUTPUT ">\n";
+		my($first_segment) = 0;
+		foreach my $ch (@{$prev->{children}}) {   # go through child segments
+
+			$prev->{line} =~ /([ |]*)(.*) : (.*)/; # parent joint
+			$parent_indent = length($1);
+			$parent_joint = $2;
+			$parent_segment = $3;
+
+			$ch->{line} =~ /([ |]*)(.*) : (.*)/; # child joint
+			$child_indent = length($1);
+			$child_joint = $2;
+			$child_segment = $3;
+
+			$first_segment++;
+			if ($first_segment == 1) {
+				#$trailing_segments .= "<HAnimSegment USE='hanim_".$parent_segment."' containerField='segments'/>\n";
+				#print OUTPUT " " x ($nxt+2)."<HAnimSegment DEF='hanim_".$parent_segment."' name='".$parent_segment."'>\n";
+				#if ($cenpj) {
+				#	if ($dopaw == 1) {
+				#		print OUTPUT " " x ($nxt + 3)."$htrans\n"
+				#	} else {
+				#		print OUTPUT " " x ($nxt + 3)."<Transform translation='".$cenpj."'>\n";
+				#		print OUTPUT " " x ($nxt + 3)."<Transform> <!-- Empty Transform -->\n";
+				#	}
+				#	print OUTPUT " " x ($nxt + 4)."<Shape USE='HAnimJointShape'/>\n";
+				#	print OUTPUT " " x ($nxt + 3)."</Transform>\n";
+				#	print OUTPUT " " x ($nxt + 3)."</Transform>\n";
+				#}
+			}
+
+			if ($joints{$child_joint} ne "") {
+				$cencj = $joints{$child_joint};
+			} else {
+				#  $cencj = "0 1 0";
+			}
+			$points = $joints{$parent_joint}." ".$cencj;
+			if ($points =~ /^ /) {
+				$verts = 1;
+			} else {
+				$verts = 2;
+			}
+			#print OUTPUT " " x ($nxt + 3)."<Shape>\n";
+			#print OUTPUT " " x ($nxt + 4)."<LineSet vertexCount='2'>\n";
+			#print OUTPUT " " x ($nxt + 5)."<Coordinate point='".$points."'/> <!-- from $parent_joint to $child_joint vertices $verts-->\n";
+			#print OUTPUT " " x ($nxt + 5)."<ColorRGBA USE='HAnimSegmentLineColorRGBA'/>\n";
+			#print OUTPUT " " x ($nxt + 4)."</LineSet>\n";
+			#print OUTPUT " " x ($nxt + 3)."</Shape>\n";
+			&listSites($child_segment);
+		}
+		if ($first_segment > 0) {
+			# print OUTPUT " " x ($nxt + 2)."</HAnimSegment>\n";
+		}
+		foreach my $jnt (@{$prev->{children}}) {   # go through child joints
+			&printXML($jnt);
+		}
+		print OUTPUT " " x $nxt."</HAnimJoint>\n";
+	}
+	if ($nxt >= $cur) {
+		push @path, $nxt;
+	}
+}
+
+sub listSites() {
+	local($child_segment) = @_;
+	foreach my $site (sort keys %parents) {
+		if ($parents{$site} eq $child_segment) { # is the parent of the site the current segment?
+			if ($site =~ /distal_phalanx/) {
+				$suffix = "_tip";
+			} elsif ($site =~ /tongue/) {
+				$suffix = "_tip";
+			} elsif ($site =~ /eye/) {
+				$suffix = "_tip";
+			} elsif ($site =~ /axilla_distal/) {
+				$suffix = "_pt";
+			} else {
+				$suffix = "_pt";
+				# $suffix = "";
+			}
+			#print OUTPUT " " x ($nxt+3)."<HAnimSite DEF='hanim_".$site.$suffix."' name='".$site.$suffix."'";
+			#if ($sites{$site} ne "") {
+			#print OUTPUT " translation='".$sites{$site}."'";
+			#} else {
+			##  print OUTPUT " translation='0 1 0'";
+			#}
+			#print OUTPUT ">\n";
+			#print OUTPUT " " x ($nxt+4)."<TouchSensor description='HAnimSite ".$site.$suffix."'/>\n";
+			#print OUTPUT " " x ($nxt+4)."<Shape USE='HAnimSiteShape'/>\n";
+			#
+			#print OUTPUT " " x ($nxt+3)."</HAnimSite>\n";
+			#$trailing_sites .= "<HAnimSite USE='hanim_".$site.$suffix."' containerField='sites'/>\n";
+		}
+	}
+}
+open(TABLE, "sh sed.sh|");
+
+while(<TABLE>) {
+	chomp;
+	$joint = $_;
+	$center = <TABLE>;
+	chomp $center;
+	$joints{$joint} = $center;
+}
+
+foreach my $joint (sort keys %joints) {
+	# print "TABLE ".$joint." ".$joints{$joint}."\n";
+}
+
+close(TABLE);
+
+open(FEATURE, "<../standards/B.2.txt");
+
+while(<FEATURE>) {
+	chomp;
+	if ($_ =~ /[^<>]*<tr>[^<>]*<td>([^<>]*)<\/td>[^<>]*<td>([^<>]*)<\/td>[^<>]*<td>([^<>]*)<\/td>[^<>]*<td>([^<>]*)<\/td>[^<>]*<td>([^<>]*)<\/td>[^<>]*<\/tr>[^<>]*/) {
+		# print $2."\t|".$5."\n";
+		$site = $2;
+		$site_alias = $5;
+		$site =~ s/[\t ]*([^\t ]*)[\t ]*/$1/;
+		$site_alias =~ s/[\t ]*([^\t ]*)[\t ]*/$1/;
+		$alias{$site_alias} = $site;
+		# print "Alias $site_alias\n";
+	}
+}
+
+close(FEATURE);
+
+open(SITETABLE, "sh sitesed.sh|");
+
+while(<SITETABLE>) {
+	chomp;
+	$site = $_;
+	$translation = <SITETABLE>;
+	chomp $translation;
+	$sites{$site} = $translation;
+
+	if ($alias{$site}) {
+		# print "Found ".%alias{$site}." ".$translation."|\n";
+		$sites{%alias{$site}} = $translation;
+	} else {
+		# print "No alias found for ".$site."\n";
+	}
+}
+close(SITETABLE);
+
+foreach my $site (sort keys %sites) {
+	# print "SITE ".$site." ".$sites{$site}."\n";
+}
+
+
+open(SITESEG, "<../standards/4.7.txt");
+
+$col = 0;
+@sites = ();
+
+$LOA = 4;
+
+# LOA-4 maps to column 2
+# LOA-3 maps to column 3
+# LOA-2 maps to column 4
+# LOA-1 maps to column 5
+# LOA-0 maps to column 6
+
+$loacol = 6 - $LOA;
+
+while (<SITESEG>) {
+	chomp;
+	$line = $_;
+	$line =~ s/[ \t]*([^ \t]*)[ \t]*/$1/e;
+	# print $line."\n";
+	if ($line eq "</table>") {
+		break;
+	} elsif ($line eq "<tr>") { # start a row
+		$col = 0;
+	} elsif ($line eq "</tr>") { # end a row
+	} elsif ($line =~ /<td>(.*)<\/td>/) {
+		$value = $1;
+		if ($col == 0) {
+			$row = $1;
+			@sites[$row] = ();
+			# print $row;
+		} elsif ($col == 1) {
+			@row = @sites[$row];
+			@row[$col] = $value;
+			# print " ".$value;
+			$site = $value;  # site
+		} elsif ($col == $loacol)  {
+			@row = @sites[$row];
+			@row[$col] = $value;
+			# print " ".$value;
+			my $segment = $value;
+			$parents{$site} = $segment; # parent of site is segment
+		}
+		if ($col == 6)  {
+			# print "\n";
+		}
+		$col++;
+	}
+}
+
+# foreach my $site (keys %parents) {
+# print $parents{$site}." ".$site."\n";
+# }
+
+close(SITESEG);
+
+sub readHierarchy {
+	$input = $ARGV[0];
+	print "$input\n";
+	open (HIER, "<$input");
+	my $prev = {};
+	$prev->{children} = ();
+	$prev->{indent} = -1;
+	foreach (<HIER>) {
+		$line = $_;
+		chomp $line;
+		$line =~ /([ |]*)(.*) : (.*)/;
+		$indent = length($1);
+		$joint = $2;
+		$segment = $3;
+		$obj = {};
+		$obj->{line} = $line;
+		$obj->{indent} = $indent;
+		$obj->{joint} = $joint;
+		$obj->{segment} = $segment;
+		$obj->{children} = ();
+		# print "$line\n";
+		if ($obj->{indent} > $prev->{indent}) {
+			$obj->{parent} = $prev;
+			# print "$obj->{joint} parent 1 is $prev->{joint}\n";
+		} elsif ($obj->{indent} == $prev->{indent}) {
+
+			$obj->{parent} = $prev->{parent};
+			# print "$obj->{joint} parent 2 is $prev->{parent}->{joint}\n";
+		} else {
+			while ($obj->{indent} < $prev->{indent}) {
+				$prev = $prev->{parent};
+			}
+			$obj->{parent} = $prev->{parent};
+			# print "$obj->{joint} parent 3 is $prev->{joint}\n";
+		}
+		push @{$obj->{parent}->{children}}, $obj;
+		$prev = $obj;
+	}
+	while (0 < $prev->{indent}) {
+		$prev = $prev->{parent};
+	}
+	close(HIER);
+	return $prev;
+}
+
+$results = $ARGV[1];
+print "$results\n";
+open(OUTPUT, ">$results");
+
+print OUTPUT << "HUMANHEADER";
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE X3D PUBLIC "ISO//Web3D//DTD X3D 4.0//EN" "https://www.web3d.org/specifications/x3d-4.0.dtd">
 <X3D profile="Immersive" version="4.0" xmlns:xsd="http://www.w3.org/2001/XMLSchema-instance" xsd:noNamespaceSchemaLocation="https://www.web3d.org/specifications/x3d-4.0.xsd">
@@ -25,18 +348,26 @@
  
 <Group> <!-- DEFS for markers of skeleton joints, segments, and sites --> 
  <Transform translation='0 0 0' scale='1 1 1'>
+  <Transform translation='0 2 0' scale='1 1 1'>
+   <Shape DEF='HAnimRootShape'>
+    <Sphere radius='0.02'  />
+     <Appearance>
+      <Material DEF='HAnimRootMaterial' diffuseColor='0.8 0 0' transparency='0.3'/>
+     </Appearance>
+    </Shape>
+  </Transform>
   <Transform translation='0 2.1 0' scale='1 1 1'>
    <Shape DEF='HAnimJointShape'>
     <Sphere radius='0.02' />
      <Appearance>
-      <Material DEF='HAnimJointMaterial' diffuseColor='0 0 0' transparency='0'/>
+      <Material DEF='HAnimJointMaterial' diffuseColor='0 0 0.8' transparency='0.3'/>
        </Appearance>
    </Shape>
   </Transform>
   <Transform translation='0 2.05 0' scale='1 1 1'>
    <Shape DEF='HAnimSegmentLine'>
     <LineSet vertexCount='2'>
-     <ColorRGBA DEF='HAnimSegmentLineColorRGBA' color='1 1 0 0 1 1 0 0'/>
+     <ColorRGBA DEF='HAnimSegmentLineColorRGBA' color='1 1 0 1 1 1 0 0.1'/>
       <Coordinate point='-0.05 0 0 0.05 0 0'/>
        </LineSet>
     </Shape>
@@ -48,7 +379,7 @@
      <Coordinate point='0 0.01 0 -0.01 0 0 0 0 0.01 0.01 0 0 0 0 -0.01 0 -0.01 0'/>
     </IndexedFaceSet>
      <Appearance>
-      <Material diffuseColor='1 1 1' transparency='1'/>
+      <Material diffuseColor='1 1 0' transparency='0.3'/>
      </Appearance>
    </Shape>
   </Transform>
@@ -57,7 +388,7 @@
 
 <NavigationInfo speed='1.5' type='"EXAMINE" "ANY"'/>
 
-<Viewpoint position='0 1 3' centerOfRotation='0 1 0' description='default'/> 
+<Viewpoint centerOfRotation='0 0 0' description='default'/> 
 
 <HAnimHumanoid DEF='hanim_HAnim'  info='"humanoidVersion=2.0"' name='HAnim' scale='1 1 1' translation='0 0 0' version='2.0'>
           <!-- <LOD containerField='skin'> (Switch whichChoice='0' and LOD parents each already work in view3dscene) -->
@@ -68,14 +399,30 @@
             </IndexedFaceSet>
             <Appearance DEF='SkinAppearance'>
               <ImageTexture DEF='zBlueSpiralBkg2' description='Blue Spiral Pattern' url='"../data/zBlueSpiralBkg2.gif" "zBlueSpiralBkg2.gif" "https://www.web3d.org/x3d/content/examples/HumanoidAnimation/Skin/zBlueSpiralBkg2.gif"'/>
-              <Material DEF='SkinMaterial' ambientIntensity='0.6' diffuseColor='1 1 1' shininess='0.6' transparency='1'/>
+              <Material DEF='SkinMaterial' ambientIntensity='0.6' diffuseColor='1 1 1' shininess='0.6' transparency='0.2'/>
             </Appearance>
           </Shape>
           <!-- </LOD> -->
           <Coordinate USE='TheSkinCoord' containerField='skinCoord'/>
-<HAnimJoint DEF='hanim_' name='' containerField='skeleton'>
-</HAnimJoint>
-<HAnimJoint USE='hanim_' containerField='joints'/>
+HUMANHEADER
+my $prev = &readHierarchy();
+&printXML($prev);
+print OUTPUT $trailing_joints;
+print OUTPUT $trailing_segments;
+print OUTPUT $trailing_sites;
+print OUTPUT << "HUMANFOOTER";
 </HAnimHumanoid>
 </Scene>
 </X3D>
+HUMANFOOTER
+close(OUTPUT);
+
+sub printNode {
+	my($top, $indent) = shift @_;
+	print OUTPUT $top->{line}."\n";
+	foreach my $child (@{$top->{children}}) {
+		&printNode($child);
+	}
+}
+
+# &printNode($prev);
