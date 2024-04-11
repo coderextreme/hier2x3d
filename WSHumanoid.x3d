@@ -1,0 +1,226 @@
+<!DOCTYPE X3D PUBLIC "ISO//Web3D//DTD X3D 4.0//EN" "https://www.web3d.org/specifications/x3d-4.0.dtd">
+<X3D profile="Immersive" version="4.0" xmlns:xsd="http://www.w3.org/2001/XMLSchema-instance" xsd:noNamespaceSchemaLocation="https://www.web3d.org/specifications/x3d-4.0.xsd">
+<head>
+  <component level='1' name='HAnim'/>
+  <meta content='JohnBoy.x3d' name='title'/>
+  <meta name='identifier' content='http://www.web3d.org/x3d/content/examples/HumanoidAnimation/JohnBoy.x3d'/>
+  <meta name='description' content='An attempt at a standard LOA-4 skeleton'/>
+  <meta name='generator' content='h2.pl'/>
+  <meta name='modified' content="14 Jan 2023"/>
+  <meta content='John Carlson' name='creator'/>
+  <meta content='9 November 2020' name='created'/>
+  <meta content='../license.html' name='license'/>
+</head>
+<Scene>
+    <NavigationInfo speed='1.5' type='"EXAMINE" "ANY"'/>
+    <Viewpoint centerOfRotation='0 0 0' description='default'/> 
+    <HAnimHumanoid DEF='Toddler_HAnim'  info='"humanoidVersion=2.0"' name='HAnim' scale='1 1 1' translation='0 0 0' version='2.0'>
+<HAnimJoint DEF="Toddler_humanoid_root" name="humanoid_root" containerField='skeleton' center="0 0 0" skinCoordIndex=" 0 " skinCoordWeight=" 0 ">
+  <HAnimJoint DEF="Toddler_sacroiliac" name="sacroiliac" center="-0.0031 0.4482 -0.0244" skinCoordIndex=" 0 " skinCoordWeight=" 0 ">
+    <HAnimJoint DEF="Toddler_l_hip" name="l_hip" center="-0.0509 0.4202 -0.0064" skinCoordIndex=" 0 " skinCoordWeight=" 0 ">
+      <HAnimJoint DEF="Toddler_l_knee" name="l_knee" center="-0.0503 0.2289 -0.0064" skinCoordIndex=" 0 " skinCoordWeight=" 0 ">
+        <HAnimJoint DEF="Toddler_l_talocrural" name="l_talocrural" center="-0.0505 0.0367 -0.0294" skinCoordIndex=" 0 " skinCoordWeight=" 0 ">
+                <HAnimJoint DEF="Toddler_l_metatarsophalangeal_2" name="l_metatarsophalangeal_2" center="-0.0588 0.0153 0.051" skinCoordIndex=" 0 " skinCoordWeight=" 0 ">
+    <HAnimJoint DEF="Toddler_r_hip" name="r_hip" center="0.045 0.42 -0.0064" skinCoordIndex=" 0 " skinCoordWeight=" 0 ">
+      <HAnimJoint DEF="Toddler_r_knee" name="r_knee" center="0.0527 0.229 -0.0064" skinCoordIndex=" 0 " skinCoordWeight=" 0 ">
+        <HAnimJoint DEF="Toddler_r_talocrural" name="r_talocrural" center="0.0642 0.037 -0.0299" skinCoordIndex=" 0 " skinCoordWeight=" 0 ">
+                <HAnimJoint DEF="Toddler_r_metatarsophalangeal_2" name="r_metatarsophalangeal_2" center="0.0672 0.0146 0.0414" skinCoordIndex=" 0 " skinCoordWeight=" 0 ">
+  <HAnimJoint DEF="Toddler_vl5" name="vl5" center="0 0.0475 0.0044" skinCoordIndex=" 0 " skinCoordWeight=" 0 ">
+        <HAnimJoint DEF="Toddler_vl2" name="vl2" center="0 0.5022 0.0055" skinCoordIndex=" 0 " skinCoordWeight=" 0 ">
+              <HAnimJoint DEF="Toddler_vt11" name="vt11" center="0 0.5584 0.0053" skinCoordIndex=" 0 " skinCoordWeight=" 0 ">
+                          <HAnimJoint DEF="Toddler_vt5" name="vt5" center="0 0.6263 0.001" skinCoordIndex=" 0 " skinCoordWeight=" 0 ">
+                                          <HAnimJoint DEF="Toddler_vc4" name="vc4" center="0 0.719 -0.0074" skinCoordIndex=" 0 " skinCoordWeight=" 0 ">
+                                                  <HAnimJoint DEF="Toddler_skullbase" name="skullbase" center="0 0.7609 -0.0074" skinCoordIndex=" 0 " skinCoordWeight=" 0 ">
+                                                    <HAnimSegment DEF="Toddler_skullbase_segment" name="skullbase_segment">
+                                                      <HAnimSite DEF="Toddler_skullbase_end" name="skullbase_end" translation="0 0.9247 -0.0067"/>                                                    </HAnimSegment>
+                                    <HAnimJoint DEF="Toddler_l_sternoclavicular" name="l_sternoclavicular" center="-0.0389 0.6914 -0.0129" skinCoordIndex=" 0 " skinCoordWeight=" 0 ">
+                                        <HAnimJoint DEF="Toddler_l_shoulder" name="l_shoulder" center="-0.1142 0.6804 -0.0069" skinCoordIndex=" 0 " skinCoordWeight=" 0 ">
+                                          <HAnimJoint DEF="Toddler_l_elbow" name="l_elbow" center="-0.1248 0.5042 -0.0096" skinCoordIndex=" 0 " skinCoordWeight=" 0 ">
+                                            <HAnimJoint DEF="Toddler_l_radiocarpal" name="l_radiocarpal" center="-0.1399 0.3579 0.0083" skinCoordIndex=" 0 " skinCoordWeight=" 0 ">
+                                                <HAnimJoint DEF="Toddler_l_carpometacarpal_1" name="l_carpometacarpal_1" center="-0.1314 0.3477 0.0205" skinCoordIndex=" 0 " skinCoordWeight=" 0 ">
+                                                  <HAnimJoint DEF="Toddler_l_metacarpophalangeal_1" name="l_metacarpophalangeal_1" center="-0.1312 0.3363 0.0264" skinCoordIndex=" 0 " skinCoordWeight=" 0 ">
+                                                    <HAnimJoint DEF="Toddler_l_carpal_interphalangeal_1" name="l_carpal_interphalangeal_1" center="-0.1315 0.3211 0.0337" skinCoordIndex=" 0 " skinCoordWeight=" 0 ">
+                                                      <HAnimSegment DEF="Toddler_l_carpal_phalanx_1_end" name="l_carpal_phalanx_1_end">
+                                                        <HAnimSite DEF="Toddler_l_carpal_interphalangeal_1_end" name="l_carpal_interphalangeal_1_end" translation="-0.1307 0.3066 0.0415"/>                                                      </HAnimSegment>
+                                                  <HAnimJoint DEF="Toddler_l_metacarpophalangeal_2" name="l_metacarpophalangeal_2" center="-0.1448 0.3084 0.0176" skinCoordIndex=" 0 " skinCoordWeight=" 0 ">
+                                                    <HAnimJoint DEF="Toddler_l_carpal_proximal_interphalangeal_2" name="l_carpal_proximal_interphalangeal_2" center="-0.1477 0.2899 0.0166" skinCoordIndex=" 0 " skinCoordWeight=" 0 ">
+                                                      <HAnimJoint DEF="Toddler_l_carpal_distal_interphalangeal_2" name="l_carpal_distal_interphalangeal_2" center="-0.1498 0.278 0.0156" skinCoordIndex=" 0 " skinCoordWeight=" 0 ">
+                                                        <HAnimSegment DEF="Toddler_l_carpal_distal_phalanx_2_end" name="l_carpal_distal_phalanx_2_end">
+                                                          <HAnimSite DEF="Toddler_l_carpal_distal_interphalangeal_2_end" name="l_carpal_distal_interphalangeal_2_end" translation="-0.1511 0.2677 0.0138"/>                                                        </HAnimSegment>
+                                                  <HAnimJoint DEF="Toddler_l_metacarpophalangeal_3" name="l_metacarpophalangeal_3" center="-0.1459 0.3098 0.0032" skinCoordIndex=" 0 " skinCoordWeight=" 0 ">
+                                                    <HAnimJoint DEF="Toddler_l_carpal_proximal_interphalangeal_3" name="l_carpal_proximal_interphalangeal_3" center="-0.1483 0.2903 0.0019" skinCoordIndex=" 0 " skinCoordWeight=" 0 ">
+                                                      <HAnimJoint DEF="Toddler_l_carpal_distal_interphalangeal_3" name="l_carpal_distal_interphalangeal_3" center="-0.1506 0.2739 0" skinCoordIndex=" 0 " skinCoordWeight=" 0 ">
+                                                        <HAnimSegment DEF="Toddler_l_carpal_distal_phalanx_3_end" name="l_carpal_distal_phalanx_3_end">
+                                                          <HAnimSite DEF="Toddler_l_carpal_distal_interphalangeal_3_end" name="l_carpal_distal_interphalangeal_3_end" translation="-0.1514 0.2641 -0.0005"/>                                                        </HAnimSegment>
+                                                  <HAnimJoint DEF="Toddler_l_metacarpophalangeal_4" name="l_metacarpophalangeal_4" center="-0.144 0.3145 -0.0073" skinCoordIndex=" 0 " skinCoordWeight=" 0 ">
+                                                    <HAnimJoint DEF="Toddler_l_carpal_proximal_interphalangeal_4" name="l_carpal_proximal_interphalangeal_4" center="-0.1464 0.2938 -0.011" skinCoordIndex=" 0 " skinCoordWeight=" 0 ">
+                                                      <HAnimJoint DEF="Toddler_l_carpal_distal_interphalangeal_4" name="l_carpal_distal_interphalangeal_4" center="-0.1469 0.2836 -0.0126" skinCoordIndex=" 0 " skinCoordWeight=" 0 ">
+                                                        <HAnimSegment DEF="Toddler_l_carpal_distal_phalanx_4_end" name="l_carpal_distal_phalanx_4_end">
+                                                          <HAnimSite DEF="Toddler_l_carpal_distal_interphalangeal_4_end" name="l_carpal_distal_interphalangeal_4_end" translation="-0.149 0.2717 -0.0147"/>                                                        </HAnimSegment>
+                                                  <HAnimJoint DEF="Toddler_l_metacarpophalangeal_5" name="l_metacarpophalangeal_5" center="-0.1398 0.3196 -0.0162" skinCoordIndex=" 0 " skinCoordWeight=" 0 ">
+                                                    <HAnimJoint DEF="Toddler_l_carpal_proximal_interphalangeal_5" name="l_carpal_proximal_interphalangeal_5" center="-0.1409 0.3065 -0.0204" skinCoordIndex=" 0 " skinCoordWeight=" 0 ">
+                                                      <HAnimJoint DEF="Toddler_l_carpal_distal_interphalangeal_5" name="l_carpal_distal_interphalangeal_5" center="-0.1412 0.2973 -0.023" skinCoordIndex=" 0 " skinCoordWeight=" 0 ">
+                                                        <HAnimSegment DEF="Toddler_l_carpal_distal_phalanx_5_end" name="l_carpal_distal_phalanx_5_end">
+                                                          <HAnimSite DEF="Toddler_l_carpal_distal_interphalangeal_5_end" name="l_carpal_distal_interphalangeal_5_end" translation="-0.1427 0.2875 -0.0251"/>                                                        </HAnimSegment>
+                                    <HAnimJoint DEF="Toddler_r_sternoclavicular" name="r_sternoclavicular" center="0.029 0.6889 -0.0093" skinCoordIndex=" 0 " skinCoordWeight=" 0 ">
+                                        <HAnimJoint DEF="Toddler_r_shoulder" name="r_shoulder" center="0.1011 0.6804 -0.0096" skinCoordIndex=" 0 " skinCoordWeight=" 0 ">
+                                          <HAnimJoint DEF="Toddler_r_elbow" name="r_elbow" center="0.1248 0.5042 -0.0133" skinCoordIndex=" 0 " skinCoordWeight=" 0 ">
+                                            <HAnimJoint DEF="Toddler_r_radiocarpal" name="r_radiocarpal" center="0.1368 0.3676 -0.0022" skinCoordIndex=" 0 " skinCoordWeight=" 0 ">
+                                                <HAnimJoint DEF="Toddler_r_carpometacarpal_1" name="r_carpometacarpal_1" center="0.1333 0.3491 0.0159" skinCoordIndex=" 0 " skinCoordWeight=" 0 ">
+                                                  <HAnimJoint DEF="Toddler_r_metacarpophalangeal_1" name="r_metacarpophalangeal_1" center="-0.002 -0.0148 0.0099" skinCoordIndex=" 0 " skinCoordWeight=" 0 ">
+                                                    <HAnimJoint DEF="Toddler_r_carpal_interphalangeal_1" name="r_carpal_interphalangeal_1" center="0.1287 0.3172 0.0369" skinCoordIndex=" 0 " skinCoordWeight=" 0 ">
+                                                      <HAnimSegment DEF="Toddler_r_carpal_phalanx_1_end" name="r_carpal_phalanx_1_end">
+                                                        <HAnimSite DEF="Toddler_r_carpal_interphalangeal_1_end" name="r_carpal_interphalangeal_1_end" translation="0.1258 0.3066 0.0446"/>                                                      </HAnimSegment>
+                                                  <HAnimJoint DEF="Toddler_r_metacarpophalangeal_2" name="r_metacarpophalangeal_2" center="0.1441 0.3125 0.0206" skinCoordIndex=" 0 " skinCoordWeight=" 0 ">
+                                                    <HAnimJoint DEF="Toddler_r_carpal_proximal_interphalangeal_2" name="r_carpal_proximal_interphalangeal_2" center="0.1455 0.2898 0.0235" skinCoordIndex=" 0 " skinCoordWeight=" 0 ">
+                                                      <HAnimJoint DEF="Toddler_r_carpal_distal_interphalangeal_2" name="r_carpal_distal_interphalangeal_2" center="0.146 0.2798 0.0245" skinCoordIndex=" 0 " skinCoordWeight=" 0 ">
+                                                        <HAnimSegment DEF="Toddler_r_carpal_distal_phalanx_2_end" name="r_carpal_distal_phalanx_2_end">
+                                                          <HAnimSite DEF="Toddler_r_carpal_distal_interphalangeal_2_end" name="r_carpal_distal_interphalangeal_2_end" translation="0.1462 0.2699 0.025"/>                                                        </HAnimSegment>
+                                                  <HAnimJoint DEF="Toddler_r_metacarpophalangeal_3" name="r_metacarpophalangeal_3" center="0.1444 0.3113 0.0081" skinCoordIndex=" 0 " skinCoordWeight=" 0 ">
+                                                    <HAnimJoint DEF="Toddler_r_carpal_proximal_interphalangeal_3" name="r_carpal_proximal_interphalangeal_3" center="0.1469 0.2859 0.0086" skinCoordIndex=" 0 " skinCoordWeight=" 0 ">
+                                                      <HAnimJoint DEF="Toddler_r_carpal_distal_interphalangeal_3" name="r_carpal_distal_interphalangeal_3" center="0.1476 0.2736 0.0092" skinCoordIndex=" 0 " skinCoordWeight=" 0 ">
+                                                        <HAnimSegment DEF="Toddler_r_carpal_distal_phalanx_3_end" name="r_carpal_distal_phalanx_3_end">
+                                                          <HAnimSite DEF="Toddler_r_carpal_distal_interphalangeal_3_end" name="r_carpal_distal_interphalangeal_3_end" translation="0.1477 0.2622 0.009"/>                                                        </HAnimSegment>
+                                                  <HAnimJoint DEF="Toddler_r_metacarpophalangeal_4" name="r_metacarpophalangeal_4" center="0.1431 0.3096 -0.0038" skinCoordIndex=" 0 " skinCoordWeight=" 0 ">
+                                                    <HAnimJoint DEF="Toddler_r_carpal_proximal_interphalangeal_4" name="r_carpal_proximal_interphalangeal_4" center="0.1441 0.2886 -0.0036" skinCoordIndex=" 0 " skinCoordWeight=" 0 ">
+                                                      <HAnimJoint DEF="Toddler_r_carpal_distal_interphalangeal_4" name="r_carpal_distal_interphalangeal_4" center="0.1447 0.2779 -0.0039" skinCoordIndex=" 0 " skinCoordWeight=" 0 ">
+                                                        <HAnimSegment DEF="Toddler_r_carpal_distal_phalanx_4_end" name="r_carpal_distal_phalanx_4_end">
+                                                          <HAnimSite DEF="Toddler_r_carpal_distal_interphalangeal_4_end" name="r_carpal_distal_interphalangeal_4_end" translation="0.1459 0.2657 -0.0047"/>                                                        </HAnimSegment>
+                                                  <HAnimJoint DEF="Toddler_r_metacarpophalangeal_5" name="r_metacarpophalangeal_5" center="0.1399 0.3131 -0.0142" skinCoordIndex=" 0 " skinCoordWeight=" 0 ">
+                                                    <HAnimJoint DEF="Toddler_r_carpal_proximal_interphalangeal_5" name="r_carpal_proximal_interphalangeal_5" center="0.1409 0.2999 -0.0154" skinCoordIndex=" 0 " skinCoordWeight=" 0 ">
+                                                      <HAnimJoint DEF="Toddler_r_carpal_distal_interphalangeal_5" name="r_carpal_distal_interphalangeal_5" center="0.1407 0.2915 -0.0162" skinCoordIndex=" 0 " skinCoordWeight=" 0 ">
+                                                        <HAnimSegment DEF="Toddler_r_carpal_distal_phalanx_5_end" name="r_carpal_distal_phalanx_5_end">
+                                                          <HAnimSite DEF="Toddler_r_carpal_distal_interphalangeal_5_end" name="r_carpal_distal_interphalangeal_5_end" translation="0.1407 0.2915 -0.0162"/>                                                        </HAnimSegment>
+                                                      </HAnimJoint>
+                                                    </HAnimJoint>
+                                                  </HAnimJoint>
+                                                      </HAnimJoint>
+                                                    </HAnimJoint>
+                                                  </HAnimJoint>
+                                                      </HAnimJoint>
+                                                    </HAnimJoint>
+                                                  </HAnimJoint>
+                                                      </HAnimJoint>
+                                                    </HAnimJoint>
+                                                  </HAnimJoint>
+                                                    </HAnimJoint>
+                                                  </HAnimJoint>
+                                                </HAnimJoint>
+                                            </HAnimJoint>
+                                          </HAnimJoint>
+                                        </HAnimJoint>
+                                    </HAnimJoint>
+                                                      </HAnimJoint>
+                                                    </HAnimJoint>
+                                                  </HAnimJoint>
+                                                      </HAnimJoint>
+                                                    </HAnimJoint>
+                                                  </HAnimJoint>
+                                                      </HAnimJoint>
+                                                    </HAnimJoint>
+                                                  </HAnimJoint>
+                                                      </HAnimJoint>
+                                                    </HAnimJoint>
+                                                  </HAnimJoint>
+                                                    </HAnimJoint>
+                                                  </HAnimJoint>
+                                                </HAnimJoint>
+                                            </HAnimJoint>
+                                          </HAnimJoint>
+                                        </HAnimJoint>
+                                    </HAnimJoint>
+                                                  </HAnimJoint>
+                                          </HAnimJoint>
+                          </HAnimJoint>
+              </HAnimJoint>
+        </HAnimJoint>
+  </HAnimJoint>
+                </HAnimJoint>
+        </HAnimJoint>
+      </HAnimJoint>
+    </HAnimJoint>
+                </HAnimJoint>
+        </HAnimJoint>
+      </HAnimJoint>
+    </HAnimJoint>
+  </HAnimJoint>
+</HAnimJoint>
+<HAnimJoint USE="Toddler_humanoid_root" name="humanoid_root" containerField="joints"/>
+  <HAnimJoint USE="Toddler_sacroiliac" name="sacroiliac" containerField="joints"/>
+    <HAnimJoint USE="Toddler_l_hip" name="l_hip" containerField="joints"/>
+      <HAnimJoint USE="Toddler_l_knee" name="l_knee" containerField="joints"/>
+        <HAnimJoint USE="Toddler_l_talocrural" name="l_talocrural" containerField="joints"/>
+                <HAnimJoint USE="Toddler_l_metatarsophalangeal_2" name="l_metatarsophalangeal_2" containerField="joints"/>
+    <HAnimJoint USE="Toddler_r_hip" name="r_hip" containerField="joints"/>
+      <HAnimJoint USE="Toddler_r_knee" name="r_knee" containerField="joints"/>
+        <HAnimJoint USE="Toddler_r_talocrural" name="r_talocrural" containerField="joints"/>
+                <HAnimJoint USE="Toddler_r_metatarsophalangeal_2" name="r_metatarsophalangeal_2" containerField="joints"/>
+  <HAnimJoint USE="Toddler_vl5" name="vl5" containerField="joints"/>
+        <HAnimJoint USE="Toddler_vl2" name="vl2" containerField="joints"/>
+              <HAnimJoint USE="Toddler_vt11" name="vt11" containerField="joints"/>
+                          <HAnimJoint USE="Toddler_vt5" name="vt5" containerField="joints"/>
+                                          <HAnimJoint USE="Toddler_vc4" name="vc4" containerField="joints"/>
+                                                  <HAnimJoint USE="Toddler_skullbase" name="skullbase" containerField="joints"/>
+                                    <HAnimJoint USE="Toddler_l_sternoclavicular" name="l_sternoclavicular" containerField="joints"/>
+                                        <HAnimJoint USE="Toddler_l_shoulder" name="l_shoulder" containerField="joints"/>
+                                          <HAnimJoint USE="Toddler_l_elbow" name="l_elbow" containerField="joints"/>
+                                            <HAnimJoint USE="Toddler_l_radiocarpal" name="l_radiocarpal" containerField="joints"/>
+                                                <HAnimJoint USE="Toddler_l_carpometacarpal_1" name="l_carpometacarpal_1" containerField="joints"/>
+                                                  <HAnimJoint USE="Toddler_l_metacarpophalangeal_1" name="l_metacarpophalangeal_1" containerField="joints"/>
+                                                    <HAnimJoint USE="Toddler_l_carpal_interphalangeal_1" name="l_carpal_interphalangeal_1" containerField="joints"/>
+                                                  <HAnimJoint USE="Toddler_l_metacarpophalangeal_2" name="l_metacarpophalangeal_2" containerField="joints"/>
+                                                    <HAnimJoint USE="Toddler_l_carpal_proximal_interphalangeal_2" name="l_carpal_proximal_interphalangeal_2" containerField="joints"/>
+                                                      <HAnimJoint USE="Toddler_l_carpal_distal_interphalangeal_2" name="l_carpal_distal_interphalangeal_2" containerField="joints"/>
+                                                  <HAnimJoint USE="Toddler_l_metacarpophalangeal_3" name="l_metacarpophalangeal_3" containerField="joints"/>
+                                                    <HAnimJoint USE="Toddler_l_carpal_proximal_interphalangeal_3" name="l_carpal_proximal_interphalangeal_3" containerField="joints"/>
+                                                      <HAnimJoint USE="Toddler_l_carpal_distal_interphalangeal_3" name="l_carpal_distal_interphalangeal_3" containerField="joints"/>
+                                                  <HAnimJoint USE="Toddler_l_metacarpophalangeal_4" name="l_metacarpophalangeal_4" containerField="joints"/>
+                                                    <HAnimJoint USE="Toddler_l_carpal_proximal_interphalangeal_4" name="l_carpal_proximal_interphalangeal_4" containerField="joints"/>
+                                                      <HAnimJoint USE="Toddler_l_carpal_distal_interphalangeal_4" name="l_carpal_distal_interphalangeal_4" containerField="joints"/>
+                                                  <HAnimJoint USE="Toddler_l_metacarpophalangeal_5" name="l_metacarpophalangeal_5" containerField="joints"/>
+                                                    <HAnimJoint USE="Toddler_l_carpal_proximal_interphalangeal_5" name="l_carpal_proximal_interphalangeal_5" containerField="joints"/>
+                                                      <HAnimJoint USE="Toddler_l_carpal_distal_interphalangeal_5" name="l_carpal_distal_interphalangeal_5" containerField="joints"/>
+                                    <HAnimJoint USE="Toddler_r_sternoclavicular" name="r_sternoclavicular" containerField="joints"/>
+                                        <HAnimJoint USE="Toddler_r_shoulder" name="r_shoulder" containerField="joints"/>
+                                          <HAnimJoint USE="Toddler_r_elbow" name="r_elbow" containerField="joints"/>
+                                            <HAnimJoint USE="Toddler_r_radiocarpal" name="r_radiocarpal" containerField="joints"/>
+                                                <HAnimJoint USE="Toddler_r_carpometacarpal_1" name="r_carpometacarpal_1" containerField="joints"/>
+                                                  <HAnimJoint USE="Toddler_r_metacarpophalangeal_1" name="r_metacarpophalangeal_1" containerField="joints"/>
+                                                    <HAnimJoint USE="Toddler_r_carpal_interphalangeal_1" name="r_carpal_interphalangeal_1" containerField="joints"/>
+                                                  <HAnimJoint USE="Toddler_r_metacarpophalangeal_2" name="r_metacarpophalangeal_2" containerField="joints"/>
+                                                    <HAnimJoint USE="Toddler_r_carpal_proximal_interphalangeal_2" name="r_carpal_proximal_interphalangeal_2" containerField="joints"/>
+                                                      <HAnimJoint USE="Toddler_r_carpal_distal_interphalangeal_2" name="r_carpal_distal_interphalangeal_2" containerField="joints"/>
+                                                  <HAnimJoint USE="Toddler_r_metacarpophalangeal_3" name="r_metacarpophalangeal_3" containerField="joints"/>
+                                                    <HAnimJoint USE="Toddler_r_carpal_proximal_interphalangeal_3" name="r_carpal_proximal_interphalangeal_3" containerField="joints"/>
+                                                      <HAnimJoint USE="Toddler_r_carpal_distal_interphalangeal_3" name="r_carpal_distal_interphalangeal_3" containerField="joints"/>
+                                                  <HAnimJoint USE="Toddler_r_metacarpophalangeal_4" name="r_metacarpophalangeal_4" containerField="joints"/>
+                                                    <HAnimJoint USE="Toddler_r_carpal_proximal_interphalangeal_4" name="r_carpal_proximal_interphalangeal_4" containerField="joints"/>
+                                                      <HAnimJoint USE="Toddler_r_carpal_distal_interphalangeal_4" name="r_carpal_distal_interphalangeal_4" containerField="joints"/>
+                                                  <HAnimJoint USE="Toddler_r_metacarpophalangeal_5" name="r_metacarpophalangeal_5" containerField="joints"/>
+                                                    <HAnimJoint USE="Toddler_r_carpal_proximal_interphalangeal_5" name="r_carpal_proximal_interphalangeal_5" containerField="joints"/>
+                                                      <HAnimJoint USE="Toddler_r_carpal_distal_interphalangeal_5" name="r_carpal_distal_interphalangeal_5" containerField="joints"/>
+                                                    <HAnimSegment USE="Toddler_skullbase_segment" name="skullbase_segment" containerField="segments"/>
+                                                      <HAnimSegment USE="Toddler_l_carpal_phalanx_1_end" name="l_carpal_phalanx_1_end" containerField="segments"/>
+                                                        <HAnimSegment USE="Toddler_l_carpal_distal_phalanx_2_end" name="l_carpal_distal_phalanx_2_end" containerField="segments"/>
+                                                        <HAnimSegment USE="Toddler_l_carpal_distal_phalanx_3_end" name="l_carpal_distal_phalanx_3_end" containerField="segments"/>
+                                                        <HAnimSegment USE="Toddler_l_carpal_distal_phalanx_4_end" name="l_carpal_distal_phalanx_4_end" containerField="segments"/>
+                                                        <HAnimSegment USE="Toddler_l_carpal_distal_phalanx_5_end" name="l_carpal_distal_phalanx_5_end" containerField="segments"/>
+                                                      <HAnimSegment USE="Toddler_r_carpal_phalanx_1_end" name="r_carpal_phalanx_1_end" containerField="segments"/>
+                                                        <HAnimSegment USE="Toddler_r_carpal_distal_phalanx_2_end" name="r_carpal_distal_phalanx_2_end" containerField="segments"/>
+                                                        <HAnimSegment USE="Toddler_r_carpal_distal_phalanx_3_end" name="r_carpal_distal_phalanx_3_end" containerField="segments"/>
+                                                        <HAnimSegment USE="Toddler_r_carpal_distal_phalanx_4_end" name="r_carpal_distal_phalanx_4_end" containerField="segments"/>
+                                                        <HAnimSegment USE="Toddler_r_carpal_distal_phalanx_5_end" name="r_carpal_distal_phalanx_5_end" containerField="segments"/>
+                                                    <HAnimSite USE="Toddler_skullbase_end" name="skullbase_end" containerField="sites"/>
+                                                      <HAnimSite USE="Toddler_l_carpal_interphalangeal_1_end" name="l_carpal_interphalangeal_1_end" containerField="sites"/>
+                                                        <HAnimSite USE="Toddler_l_carpal_distal_interphalangeal_2_end" name="l_carpal_distal_interphalangeal_2_end" containerField="sites"/>
+                                                        <HAnimSite USE="Toddler_l_carpal_distal_interphalangeal_3_end" name="l_carpal_distal_interphalangeal_3_end" containerField="sites"/>
+                                                        <HAnimSite USE="Toddler_l_carpal_distal_interphalangeal_4_end" name="l_carpal_distal_interphalangeal_4_end" containerField="sites"/>
+                                                        <HAnimSite USE="Toddler_l_carpal_distal_interphalangeal_5_end" name="l_carpal_distal_interphalangeal_5_end" containerField="sites"/>
+                                                      <HAnimSite USE="Toddler_r_carpal_interphalangeal_1_end" name="r_carpal_interphalangeal_1_end" containerField="sites"/>
+                                                        <HAnimSite USE="Toddler_r_carpal_distal_interphalangeal_2_end" name="r_carpal_distal_interphalangeal_2_end" containerField="sites"/>
+                                                        <HAnimSite USE="Toddler_r_carpal_distal_interphalangeal_3_end" name="r_carpal_distal_interphalangeal_3_end" containerField="sites"/>
+                                                        <HAnimSite USE="Toddler_r_carpal_distal_interphalangeal_4_end" name="r_carpal_distal_interphalangeal_4_end" containerField="sites"/>
+                                                        <HAnimSite USE="Toddler_r_carpal_distal_interphalangeal_5_end" name="r_carpal_distal_interphalangeal_5_end" containerField="sites"/>
+    </HAnimHumanoid>
+</Scene>
+</X3D>

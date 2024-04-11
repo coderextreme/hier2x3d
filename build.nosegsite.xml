@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="Humanoid Building" default="default" basedir=".">
+    <description>Builds Humanoids without Segments or Sites</description>
+    <property name="fork"         value="true"/>
+    <!--
+    <property name="examples"     value="/x3d-code/www.web3d.org/x3d/content/examples"/>
+    -->
+    <property name="examples"     value="examples"/>
+    <property name="classpath"     value="C:/Users/john/pythonSAI/X3DJSAIL.4.0.full.jar;."/>
+
+<taskdef resource="net/sf/antcontrib/antcontrib.properties">
+  <classpath>
+    <pathelement location="C:/apache-ant-1.10.12-bin/apache-ant-1.10.12/lib/ant-contrib-1.0b3.jar"/>
+  </classpath>
+</taskdef>
+
+    <target name="default" description="generate humanoids">
+	<echo message="Building humanoids with perl:"/>
+	<echo message="LOA4-corrected"/>
+	<exec executable="perl">
+                <arg value="hier2x3d.nosegsite.pl"/>
+                <arg value="../standards/Hierarchy.txt"/>
+                <arg value="./results/StandardHumanoidNoSegSite.x3d"/>
+        </exec>
+	<echo message="Don's hierarchy"/>
+	<exec executable="perl">
+                <arg value="hier2x3d.nosegsite.pl"/>
+		<arg value="/c/x3d-code/www.web3d.org/x3d/stylesheets/HAnimLOA4HierarchyTable.txt"/>
+                <arg value="./results/DonHumanoidNoSegSite.x3d"/>
+        </exec>
+	<echo message="Standard hierarchies"/>
+	<echo message="LOA1"/>
+	<exec executable="perl">
+                <arg value="hier2x3d.nosegsite.pl"/>
+                <arg value="../standards/Hier1.txt"/>
+                <arg value="./results/Humanoid1NoSegSite.x3d"/>
+        </exec>
+	<echo message="LOA2"/>
+	<exec executable="perl">
+                <arg value="hier2x3d.nosegsite.pl"/>
+                <arg value="../standards/Hier2.txt"/>
+                <arg value="./results/Humanoid2NoSegSite.x3d"/>
+        </exec>
+	<echo message="LOA3"/>
+	<exec executable="perl">
+                <arg value="hier2x3d.nosegsite.pl"/>
+                <arg value="../standards/Hier3.txt"/>
+                <arg value="./results/Humanoid3NoSegSite.x3d"/>
+        </exec>
+	<echo message="LOA4"/>
+	<exec executable="perl">
+                <arg value="hier2x3d.nosegsite.pl"/>
+                <arg value="../standards/Hier4.txt"/>
+                <arg value="./results/Humanoid4NoSegSite.x3d"/>
+        </exec>
+	<echo message="tovrml3d to Classic VRML conversion"/>
+	<exec executable="perl">
+		<arg value="tovrmlx3d.pl"/>
+        </exec>
+    </target>
+</project>
+
+
