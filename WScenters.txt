@@ -1,0 +1,108 @@
+humanoid_root
+0 0 0
+vl5
+0.0009 0.4629 0.0036
+vl2
+0.0014 0.4932 0.0036
+vt11
+0.0003 0.5432 0.0036
+vt5
+0.001 0.637 0.0036
+vc4
+0.0021 0.714 0.0036
+skullbase
+-0.0004 0.9213 0.0053
+r_sternoclavicular
+-0.0449 0.6949 0.0098
+r_shoulder
+-0.1123 0.6668 0.0143
+r_elbow
+-0.1329 0.4986 0.01
+r_radiocarpal
+-0.144 0.3549 -0.0059
+r_carpometacarpal_1
+0.0162 0.3364 -0.0221
+r_metacarpophalangeal_1
+-0.1354 0.323 -0.0285
+r_carpal_interphalangeal_1
+-0.1314 0.3074 -0.0332
+r_metacarpophalangeal_2
+-0.1566 0.3002 -0.0159
+r_carpal_proximal_interphalangeal_2
+-0.142 0.2853 -0.0137
+r_carpal_distal_interphalangeal_2
+-0.1345 0.2782 -0.0126
+r_metacarpophalangeal_3
+-0.1569 0.3025 -0.004
+r_carpal_proximal_interphalangeal_3
+-0.1484 0.2798 -0.0023
+r_carpal_distal_interphalangeal_3
+-0.1381 0.2715 -0.0011
+r_metacarpophalangeal_4
+-0.1538 0.3063 0.0062
+r_carpal_proximal_interphalangeal_4
+-0.144 0.2876 0.0107
+r_carpal_distal_interphalangeal_4
+-0.1382 0.2774 0.0137
+r_metacarpophalangeal_5
+-0.1465 0.3125 0.0163
+r_carpal_proximal_interphalangeal_5
+-0.1373 0.2996 0.0212
+r_carpal_distal_interphalangeal_5
+-0.1323 0.2931 0.0237
+l_sternoclavicular
+0.0469 0.6948 0.0052
+l_shoulder
+0.1118 0.6662 0.0115
+l_elbow
+0.123 0.4967 0.0084
+l_radiocarpal
+0.135 0.3547 0.0071
+l_carpometacarpal_1
+0.1324 0.3374 -0.0121
+l_metacarpophalangeal_1
+0.1319 0.3257 -0.0214
+l_carpal_interphalangeal_1
+0.1299 0.3179 -0.0342
+l_metacarpophalangeal_2
+0.1411 0.3068 -0.0184
+l_carpal_proximal_interphalangeal_2
+0.1433 0.2799 -0.0201
+l_carpal_distal_interphalangeal_2
+0.1436 0.2682 -0.021
+l_metacarpophalangeal_3
+0.1424 0.2996 -0.0067
+l_carpal_proximal_interphalangeal_3
+0.1441 0.2755 -0.0075
+l_carpal_distal_interphalangeal_3
+0.1457 0.2639 -0.0117
+l_metacarpophalangeal_4
+0.1425 0.3006 0.0076
+l_carpal_proximal_interphalangeal_4
+0.1419 0.2772 0.0086
+l_carpal_distal_interphalangeal_4
+0.1415 0.2651 0.0086
+l_metacarpophalangeal_5
+0.1372 0.3035 0.0184
+l_carpal_proximal_interphalangeal_5
+0.1388 0.2885 0.0201
+l_carpal_distal_interphalangeal_5
+0.1392 0.2798 0.0207
+sacroiliac
+0.0007 0.4563 0.0003
+l_hip
+0.0543 0.3956 0.0049
+l_knee
+0.054 0.2421 -0.0939
+l_talocrural
+0.0649 0.104 0.0317
+l_metatarsophalangeal_2
+0.0685 0.0747 -0.0413
+r_hip
+-0.0532 0.3952 0.0054
+r_knee
+-0.0575 0.3343 0.1766
+r_talocrural
+-0.0734 0.5212 0.1712
+r_metatarsophalangeal_2
+-0.08 0.5068 0.2486
