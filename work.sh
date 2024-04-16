@@ -2,8 +2,8 @@
 # 
 cat /dev/null > ./results/missingtranslation.txt
 cat /dev/null > ./results/missingcenter.txt
-grep -h -e '<'HAnimSite /c/x3d-codes/www.web3d.org/x3d/content/examples/HumanoidAnimation/Characters/JinLOA4.x3d ./results/DonHumanoid.x3d ../standards/HAnimModelFootLeft.x3d ../standards/HAnimModelFootRight.x3d ../standards/HAnimModelHandLeft.x3d ../standards/HAnimModelHandRight.x3d | grep -v USE|grep -v translation| sort -u >> ./results/missingtranslation.txt
-grep -h -e '<'HAnimJoint /c/x3d-codes/www.web3d.org/x3d/content/examples/HumanoidAnimation/Characters/JinLOA4.x3d ./results/DonHumanoid.x3d ../standards/HAnimModelFootLeft.x3d ../standards/HAnimModelFootRight.x3d ../standards/HAnimModelHandLeft.x3d ../standards/HAnimModelHandRight.x3d |grep -v USE|grep -v center | sort -u >> ./results/missingcenter.txt
+grep -h -e '<'HAnimSite /c/x3d-codes/www.web3d.org/x3d/content/examples/HumanoidAnimation/Characters/JinLOA4.x3d ./results/DonHumanoid.x3d ./standards/HAnimModelFootLeft.x3d ./standards/HAnimModelFootRight.x3d ./standards/HAnimModelHandLeft.x3d ./standards/HAnimModelHandRight.x3d | grep -v USE|grep -v translation| sort -u >> ./results/missingtranslation.txt
+grep -h -e '<'HAnimJoint /c/x3d-codes/www.web3d.org/x3d/content/examples/HumanoidAnimation/Characters/JinLOA4.x3d ./results/DonHumanoid.x3d ./standards/HAnimModelFootLeft.x3d ./standards/HAnimModelFootRight.x3d ./standards/HAnimModelHandLeft.x3d ./standards/HAnimModelHandRight.x3d |grep -v USE|grep -v center | sort -u >> ./results/missingcenter.txt
 sed "s/.*name='\([^']*\)'>/\1/" ./results/missingcenter.txt > ./results/findthesecenters.txt
 sed "s/.*name='\([^']*\)'>/\1/" ./results/missingtranslation.txt > ./results/findthesetranslations.txt
 

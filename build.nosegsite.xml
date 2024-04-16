@@ -19,7 +19,7 @@
 	<echo message="LOA4-corrected"/>
 	<exec executable="perl">
                 <arg value="hier2x3d.nosegsite.pl"/>
-                <arg value="../standards/Hierarchy.txt"/>
+                <arg value="./standards/Hierarchy.txt"/>
                 <arg value="./results/StandardHumanoidNoSegSite.x3d"/>
         </exec>
 	<echo message="Don's hierarchy"/>
@@ -32,25 +32,25 @@
 	<echo message="LOA1"/>
 	<exec executable="perl">
                 <arg value="hier2x3d.nosegsite.pl"/>
-                <arg value="../standards/Hier1.txt"/>
+                <arg value="./standards/Hier1.txt"/>
                 <arg value="./results/Humanoid1NoSegSite.x3d"/>
         </exec>
 	<echo message="LOA2"/>
 	<exec executable="perl">
                 <arg value="hier2x3d.nosegsite.pl"/>
-                <arg value="../standards/Hier2.txt"/>
+                <arg value="./standards/Hier2.txt"/>
                 <arg value="./results/Humanoid2NoSegSite.x3d"/>
         </exec>
 	<echo message="LOA3"/>
 	<exec executable="perl">
                 <arg value="hier2x3d.nosegsite.pl"/>
-                <arg value="../standards/Hier3.txt"/>
+                <arg value="./standards/Hier3.txt"/>
                 <arg value="./results/Humanoid3NoSegSite.x3d"/>
         </exec>
 	<echo message="LOA4"/>
 	<exec executable="perl">
                 <arg value="hier2x3d.nosegsite.pl"/>
-                <arg value="../standards/Hier4.txt"/>
+                <arg value="./standards/Hier4.txt"/>
                 <arg value="./results/Humanoid4NoSegSite.x3d"/>
         </exec>
 	<echo message="tovrml3d to Classic VRML conversion"/>

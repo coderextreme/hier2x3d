@@ -1,5 +1,5 @@
 #!/bin/bash
-#perl hier2x3d.pl ../standards/Hierarchy.txt ./results/StandardHumanoid.x3d 4
+#perl hier2x3d.pl ./standards/Hierarchy.txt ./results/StandardHumanoid.x3d 4
 #perl hier2x3d.pl /c/x3d-code/www.web3d.org/x3d/stylesheets/HAnimLOA4HierarchyTable.txt ./results/DonHumanoid.x3d 4
 #perl hier2x3d.pl /c/x3d-code/www.web3d.org/x3d/stylesheets/HAnimLOA4HierarchyTable.txt ./results/DonHumanoid.x3d 4
 perl centers.pl > ../scale/WScenters.txt

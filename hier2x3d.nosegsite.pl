@@ -175,7 +175,7 @@ foreach my $joint (sort keys %joints) {
 
 close(TABLE);
 
-open(FEATURE, "<../standards/B.2.txt");
+open(FEATURE, "<./standards/B.2.txt");
 
 while(<FEATURE>) {
 	chomp;
@@ -215,7 +215,7 @@ foreach my $site (sort keys %sites) {
 }
 
 
-open(SITESEG, "<../standards/4.7.txt");
+open(SITESEG, "<./standards/4.7.txt");
 
 $col = 0;
 @sites = ();

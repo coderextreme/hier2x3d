@@ -1,0 +1,18 @@
+humanoid_root : sacrum
+  sacroiliac : pelvis
+  | l_hip : l_thigh
+  | | l_knee : l_calf
+  | |   l_talocrural : l_talus
+  | |     l_metatarsophalangeal_2 : l_tarsal_proximal_phalanx_2
+  | r_hip : r_thigh
+  |   r_knee : r_calf
+  |     r_talocrural : r_talus
+  |       r_metatarsophalangeal_2 : r_tarsal_proximal_phalanx_2
+  vl5 : l5
+    skullbase : skull
+    l_shoulder : l_upperarm
+    | l_elbow : l_forearm
+    |   l_radiocarpal : l_carpal
+    r_shoulder : r_upperarm
+      r_elbow : r_forearm
+        r_radiocarpal : r_carpal

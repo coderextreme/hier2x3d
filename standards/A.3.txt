@@ -1,0 +1,316 @@
+<table summary="Table A.3 — LOA‑0: Suggested Site objects translation values">
+  <tbody>
+    <tr>
+      <th>Site object</th>
+      <th>Suggested <i>translation</i> value</th>
+    </tr>
+    <tr>
+      <td><span class="Code">skull_tip</span></td>
+      <td><span class="Code">0.0050 1.7504 0.0055</span></td>
+    </tr>
+    <tr>
+      <td><span class="Code">sellion</span></td>
+      <td><span class="Code">0.0058 1.6316 0.0852</span></td>
+    </tr>
+    <tr>
+      <td><span class="Code">r_infraorbitale</span></td>
+      <td><span class="Code">-0.0237 1.6171 0.0752</span></td>
+    </tr>
+    <tr>
+      <td><span class="Code">l_infraorbitale</span></td>
+      <td><span class="Code">0.0341 1.6171 0.0752</span></td>
+    </tr>
+    <tr>
+      <td><span class="Code">supramenton</span></td>
+      <td><span class="Code">0.0061 1.5410 0.0805</span></td>
+    </tr>
+    <tr>
+      <td><span class="Code">r_tragion</span></td>
+      <td><span class="Code">-0.0646 1.6347 0.0302</span></td>
+    </tr>
+    <tr>
+      <td><span class="Code">r_gonion</span></td>
+      <td><span class="Code">-0.0520 1.5529 0.0347</span></td>
+    </tr>
+    <tr>
+      <td><span class="Code">l_tragion</span></td>
+      <td><span class="Code">0.0739 1.6348 0.0282</span></td>
+    </tr>
+    <tr>
+      <td><span class="Code">l_gonion</span></td>
+      <td><span class="Code">0.0631 1.5530 0.0330</span></td>
+    </tr>
+    <tr>
+      <td><span class="Code">nuchale</span></td>
+      <td><span class="Code">0.0039 1.5972 -0.0796</span></td>
+    </tr>
+    <tr>
+      <td><span class="Code">r_clavicale</span></td>
+      <td><span class="Code">-0.0115 1.4943 0.0400</span></td>
+    </tr>
+    <tr>
+      <td><span class="Code">suprasternale</span></td>
+      <td><span class="Code">0.0084 1.4714 0.0551</span></td>
+    </tr>
+    <tr>
+      <td><span class="Code">l_clavicale</span></td>
+      <td><span class="Code">0.0271 1.4943 0.0394</span></td>
+    </tr>
+    <tr>
+      <td><span class="Code">r_thelion</span></td>
+      <td><span class="Code">-0.0736 1.3385 0.1217</span></td>
+    </tr>
+    <tr>
+      <td><span class="Code">l_thelion</span></td>
+      <td><span class="Code">0.0918 1.3382 0.1192</span></td>
+    </tr>
+    <tr>
+      <td><span class="Code">substernale</span></td>
+      <td><span class="Code">0.0085 1.2995 0.1147</span></td>
+    </tr>
+    <tr>
+      <td><span class="Code">r_rib10</span></td>
+      <td><span class="Code">-0.0711 1.1941 0.1016</span></td>
+    </tr>
+    <tr>
+      <td><span class="Code">r_asis</span></td>
+      <td><span class="Code">-0.0887 1.0021 0.1112</span></td>
+    </tr>
+    <tr>
+      <td><span class="Code">l_rib10</span></td>
+      <td><span class="Code">0.0871 1.1925 0.0992</span></td>
+    </tr>
+    <tr>
+      <td><span class="Code">l_asis</span></td>
+      <td><span class="Code">0.0925 0.9983 0.1052</span></td>
+    </tr>
+    <tr>
+      <td><span class="Code">r_iliocristale</span></td>
+      <td><span class="Code">-0.1525 1.0628 0.0035</span></td>
+    </tr>
+    <tr>
+      <td><span class="Code">r_trochanterion</span></td>
+      <td><span class="Code">-0.1689 0.8419 0.0352</span></td>
+    </tr>
+    <tr>
+      <td><span class="Code">l_iliocristale</span></td>
+      <td><span class="Code">0.1612 1.0537 0.0008</span></td>
+    </tr>
+    <tr>
+      <td><span class="Code">l_trochanterion</span></td>
+      <td><span class="Code">0.1677 0.8336 0.0303</span></td>
+    </tr>
+    <tr>
+      <td><span class="Code">cervicale</span></td>
+      <td><span class="Code">0.0064 1.520 -0.0815</span></td>
+    </tr>
+    <tr>
+      <td><span class="Code">spine_2_lower_back</span></td>
+      <td><span class="Code">0.0049 1.1908 -0.1113</span></td>
+    </tr>
+    <tr>
+      <td><span class="Code">r_psis</span></td>
+      <td><span class="Code">-0.0716 1.0190 -0.1138</span></td>
+    </tr>
+    <tr>
+      <td><span class="Code">l_psis</span></td>
+      <td><span class="Code">0.0774 1.0190 -0.1151</span></td>
+    </tr>
+    <tr>
+      <td><span class="Code">waist_preferred_posterior</span></td>
+      <td><span class="Code">0.2900 1.0915 -0.1091</span></td>
+    </tr>
+    <tr>
+      <td><span class="Code">r_acromion</span></td>
+      <td><span class="Code">-0.1905 1.4791 -0.0431</span></td>
+    </tr>
+    <tr>
+      <td><span class="Code">r_axilla_proximal</span></td>
+      <td><span class="Code">-0.1626 1.4072 -0.0031</span></td>
+    </tr>
+    <tr>
+      <td><span class="Code">r_radial_styloid</span></td>
+      <td><span class="Code">-0.1884 0.8676 -0.0360</span></td>
+    </tr>
+    <tr>
+      <td><span class="Code">r_axilla_distal</span></td>
+      <td><span class="Code">-0.1603 1.4098 -0.0826</span></td>
+    </tr>
+    <tr>
+      <td><span class="Code">r_olecranon</span></td>
+      <td><span class="Code">-0.1907 1.1405 -0.1065</span></td>
+    </tr>
+    <tr>
+      <td><span class="Code">r_humeral_lateral_epicondyles</span></td>
+      <td><span class="Code">-0.2224 1.1517 -0.1033</span></td>
+    </tr>
+    <tr>
+      <td><span class="Code">r_humeral_medial_epicondyles</span></td>
+      <td><span class="Code">-0.1680 1.1298 -0.1062</span></td>
+    </tr>
+    <tr>
+      <td><span class="Code">r_radiale</span></td>
+      <td><span class="Code">-0.2130 1.1305 -0.1091</span></td>
+    </tr>
+    <tr>
+      <td><span class="Code">r_metacarpal_phalanx_2</span></td>
+      <td><span class="Code">-0.1977 0.8169 -0.0177</span></td>
+    </tr>
+    <tr>
+      <td><span class="Code">r_dactylion</span></td>
+      <td><span class="Code">-0.1941 0.6772 -0.0423</span></td>
+    </tr>
+    <tr>
+      <td><span class="Code">r_ulnar_styloid</span></td>
+      <td><span class="Code">-0.2117 0.8562 -0.0584</span></td>
+    </tr>
+    <tr>
+      <td><span class="Code">r_metacarpal_phalanx_5</span></td>
+      <td><span class="Code">-0.1929 0.7890 -0.1064</span></td>
+    </tr>
+    <tr>
+      <td><span class="Code">l_acromion</span></td>
+      <td><span class="Code">0.2032 1.4760 -0.0490</span></td>
+    </tr>
+    <tr>
+      <td><span class="Code">l_axilla_proximal</span></td>
+      <td><span class="Code">0.1777 1.4065 -0.0075</span></td>
+    </tr>
+    <tr>
+      <td><span class="Code">l_radial_styloid</span></td>
+      <td><span class="Code">0.1901 0.8645 -0.0415</span></td>
+    </tr>
+    <tr>
+      <td><span class="Code">l_axilla_distal</span></td>
+      <td><span class="Code">0.1706 1.4072 -0.0875</span></td>
+    </tr>
+    <tr>
+      <td><span class="Code">l_olecranon</span></td>
+      <td><span class="Code">-0.1962 1.1375 -0.1123</span></td>
+    </tr>
+    <tr>
+      <td><span class="Code">l_humeral_lateral_epicondyles</span></td>
+      <td><span class="Code">0.2280 1.1482 -0.1100</span></td>
+    </tr>
+    <tr>
+      <td><span class="Code">l_humeral_medial_epicondyles</span></td>
+      <td><span class="Code">0.1735 1.1272 -0.1113</span></td>
+    </tr>
+    <tr>
+      <td><span class="Code">l_radiale</span></td>
+      <td><span class="Code">0.2182 1.1212 -0.1167</span></td>
+    </tr>
+    <tr>
+      <td><span class="Code">l_metacarpal_phalanx_2</span></td>
+      <td><span class="Code">0.2009 0.8139 -0.0237</span></td>
+    </tr>
+    <tr>
+      <td><span class="Code">l_dactylion</span></td>
+      <td><span class="Code">0.2056 0.6743 -0.0482</span></td>
+    </tr>
+    <tr>
+      <td><span class="Code">l_ulnar_styloid</span></td>
+      <td><span class="Code">-0.2142 0.8529 -0.0648</span></td>
+    </tr>
+    <tr>
+      <td><span class="Code">l_metacarpal_phalanx_5</span></td>
+      <td><span class="Code">0.1929 0.7860 -0.1122</span></td>
+    </tr>
+    <tr>
+      <td><span class="Code">r_knee_crease</span></td>
+      <td><span class="Code">-0.0825 0.4932 -0.0326</span></td>
+    </tr>
+    <tr>
+      <td><span class="Code">r_femoral_lateral_epicondyles</span></td>
+      <td><span class="Code">-0.1421 0.4992 0.0310</span></td>
+    </tr>
+    <tr>
+      <td><span class="Code">r_femoral_medial_epicondyles</span></td>
+      <td><span class="Code">-0.0221 0.5014 0.0289</span></td>
+    </tr>
+    <tr>
+      <td><span class="Code">r_tarsal_interphalangeal_phalanx_5</span></td>
+      <td><span class="Code">-0.1523 0.0166 0.0895</span></td>
+    </tr>
+    <tr>
+      <td><span class="Code">r_lateral_malleolus</span></td>
+      <td><span class="Code">-0.1006 0.0658 -0.1075</span></td>
+    </tr>
+    <tr>
+      <td><span class="Code">r_medial_malleolus</span></td>
+      <td><span class="Code">-0.0591 0.0760 -0.0928</span></td>
+    </tr>
+    <tr>
+      <td><span class="Code">r_sphyrion</span></td>
+      <td><span class="Code">-0.0603 0.0610 -0.1002</span></td>
+    </tr>
+    <tr>
+      <td><span class="Code">r_tarsal_interphalangeal_phalanx_1</span></td>
+      <td><span class="Code">-0.0521 0.0260 0.0127</span></td>
+    </tr>
+    <tr>
+      <td><span class="Code">r_calcaneus_posterior</span></td>
+      <td><span class="Code">-0.0692 0.0297 -0.1221</span></td>
+    </tr>
+    <tr>
+      <td><span class="Code">r_tarsal_distal_phalanx_2</span></td>
+      <td><span class="Code">-0.0883 0.0134 0.1383</span></td>
+    </tr>
+    <tr>
+      <td><span class="Code">l_knee_crease</span></td>
+      <td><span class="Code">0.0993 0.4881 -0.0309</span></td>
+    </tr>
+    <tr>
+      <td><span class="Code">l_femoral_lateral_epicondyles</span></td>
+      <td><span class="Code">0.1598 0.4967 0.0297</span></td>
+    </tr>
+    <tr>
+      <td><span class="Code">l_femoral_medial_epicondyles</span></td>
+      <td><span class="Code">0.0398 0.4946 0.0303</span></td>
+    </tr>
+    <tr>
+      <td><span class="Code">l_tarsal_interphalangeal_phalanx_5</span></td>
+      <td><span class="Code">0.1825 0.0070 0.0928</span></td>
+    </tr>
+    <tr>
+      <td><span class="Code">l_lateral_malleolus</span></td>
+      <td><span class="Code">0.1308 0.0597 -0.1032</span></td>
+    </tr>
+    <tr>
+      <td><span class="Code">l_medial_malleolus</span></td>
+      <td><span class="Code">0.0890 0.0716 -0.0881</span></td>
+    </tr>
+    <tr>
+      <td><span class="Code">l_sphyrion</span></td>
+      <td><span class="Code">0.0890 0.0575 -0.0943</span></td>
+    </tr>
+    <tr>
+      <td><span class="Code">l_tarsal_interphalangeal_phalanx_1</span></td>
+      <td><span class="Code">0.0816 0.0232 0.0106</span></td>
+    </tr>
+    <tr>
+      <td><span class="Code">l_calcaneus_posterior</span></td>
+      <td><span class="Code">0.0974 0.0259 -0.1171</span></td>
+    </tr>
+    <tr>
+      <td><span class="Code">l_tarsal_distal_phalanx_2</span></td>
+      <td><span class="Code">0.1195 0.0079 0.1433</span></td>
+    </tr>
+    <tr>
+      <td><span class="Code">crotch</span></td>
+      <td><span class="Code">0.0034 0.8266 0.0257</span></td>
+    </tr>
+    <tr>
+      <td><span class="Code">r_neck_base</span></td>
+      <td><span class="Code">-0.0419 1.5149 -0.0220</span></td>
+    </tr>
+    <tr>
+      <td><span class="Code">l_neck_base</span></td>
+      <td><span class="Code">0.0646 1.5141 -0.0380</span></td>
+    </tr>
+    <tr>
+      <td><span class="Code">navel</span></td>
+      <td><span class="Code">0.0069 1.0966 0.1017</span></td>
+    </tr>
+  </tbody>
+</table>

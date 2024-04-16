@@ -1,0 +1,12 @@
+<table summary="Suggested Joint object center value">
+  <tbody>
+    <tr>
+      <th>Joint object</th>
+      <th>Suggested <i>center</i> value</th>
+    </tr>
+    <tr>
+      <td><span class="Code">humanoid_root</span></td>
+      <td><span class="Code">0.0000 0.8240 0.0277</span></td>
+    </tr>
+  </tbody>
+</table>

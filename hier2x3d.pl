@@ -23,7 +23,7 @@ sub uniq {
     grep !$seen{$_}++, @_;
 }
 
-open(FEATURE, "<../../HAnim.code/standards/B.2.txt") or die "Cannot open  ../../HAnim.code/standards/B.2.txt\n";
+open(FEATURE, "<./standards/B.2.txt") or die "Cannot open  ./standards/B.2.txt\n";
 
 while(<FEATURE>) {
 	chomp;
@@ -242,7 +242,7 @@ foreach my $site (sort keys %sites) {
 }
 
 
-open(SITESEG, "<../../HAnim.code/standards/4.7.txt") or die "Cannot open ../../HAnim.code/standards/4.7.txt\n";
+open(SITESEG, "<./standards/4.7.txt") or die "Cannot open ./standards/4.7.txt\n";
 
 $col = 0;
 @sites = ();

@@ -20,42 +20,42 @@
 	<echo message="LOA0"/>
 	<exec executable="perl">
                 <arg value="hier2x3d.pl"/>
-                <arg value="../standards/Hier0.txt"/>
+                <arg value="./standards/Hier0.txt"/>
                 <arg value="./results/Humanoid0.x3d"/>
                 <arg value="0"/>
         </exec>
 	<echo message="LOA1"/>
 	<exec executable="perl">
                 <arg value="hier2x3d.pl"/>
-                <arg value="../standards/Hier1.txt"/>
+                <arg value="./standards/Hier1.txt"/>
                 <arg value="./results/Humanoid1.x3d"/>
                 <arg value="1"/>
         </exec>
 	<echo message="LOA2"/>
 	<exec executable="perl">
                 <arg value="hier2x3d.pl"/>
-                <arg value="../standards/Hier2.txt"/>
+                <arg value="./standards/Hier2.txt"/>
                 <arg value="./results/Humanoid2.x3d"/>
                 <arg value="2"/>
         </exec>
 	<echo message="LOA3"/>
 	<exec executable="perl">
                 <arg value="hier2x3d.pl"/>
-                <arg value="../standards/Hier3.txt"/>
+                <arg value="./standards/Hier3.txt"/>
                 <arg value="./results/Humanoid3.x3d"/>
                 <arg value="3"/>
         </exec>
 	<echo message="LOA4"/>
 	<exec executable="perl">
                 <arg value="hier2x3d.pl"/>
-                <arg value="../standards/Hier4.txt"/>
+                <arg value="./standards/Hier4.txt"/>
                 <arg value="./results/Humanoid4.x3d"/>
                 <arg value="4"/>
         </exec>
 	<echo message="LOA4-corrected"/>
 	<exec executable="perl">
                 <arg value="hier2x3d.pl"/>
-                <arg value="../standards/Hierarchy.txt"/>
+                <arg value="./standards/Hierarchy.txt"/>
                 <arg value="./results/StandardHumanoid.x3d"/>
                 <arg value="4"/>
         </exec>
@@ -69,42 +69,42 @@
 	<echo message="Joe LOA0-corrected"/>
 	<exec executable="perl">
                 <arg value="joehierx3d.pl"/>
-                <arg value="../standards/Hier0.txt"/>
+                <arg value="./standards/Hier0.txt"/>
                 <arg value="./results/Humanoid0J.x3d"/>
                 <arg value="0"/>
         </exec>
 	<echo message="Joe LOA1-corrected"/>
 	<exec executable="perl">
                 <arg value="joehierx3d.pl"/>
-                <arg value="../standards/Hier1.txt"/>
+                <arg value="./standards/Hier1.txt"/>
                 <arg value="./results/Humanoid1J.x3d"/>
                 <arg value="1"/>
         </exec>
 	<echo message="Joe LOA2-corrected"/>
 	<exec executable="perl">
                 <arg value="joehierx3d.pl"/>
-                <arg value="../standards/Hier2.txt"/>
+                <arg value="./standards/Hier2.txt"/>
                 <arg value="./results/Humanoid2J.x3d"/>
                 <arg value="2"/>
         </exec>
 	<echo message="Joe LOA3-corrected"/>
 	<exec executable="perl">
                 <arg value="joehierx3d.pl"/>
-                <arg value="../standards/Hier3.txt"/>
+                <arg value="./standards/Hier3.txt"/>
                 <arg value="./results/Humanoid3J.x3d"/>
                 <arg value="3"/>
         </exec>
 	<echo message="Joe LOA4-corrected"/>
 	<exec executable="perl">
                 <arg value="joehierx3d.pl"/>
-                <arg value="../standards/Hier4.txt"/>
+                <arg value="./standards/Hier4.txt"/>
                 <arg value="./results/Humanoid4J.x3d"/>
                 <arg value="4"/>
         </exec>
 	<echo message="Joe LOA4-corrected Standard"/>
 	<exec executable="perl">
                 <arg value="joehierx3d.pl"/>
-                <arg value="../standards/Hierarchy.txt"/>
+                <arg value="./standards/Hierarchy.txt"/>
                 <arg value="./results/StandardHumanoidJ.x3d"/>
                 <arg value="4"/>
         </exec>
