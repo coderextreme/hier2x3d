@@ -1,0 +1,47 @@
+Hierarchy LOA-4 is 146 joints, not 148
+Hierarchy LOA-3 is 94 joints
+==================================
+in X3DUOM,
+
+r_metatarsal should be an alias for r_metatarsal_2, not r_tarsal_distal_interphalangeal_2
+
+Existing incorrect line
+
+<enumeration value="r_tarsal_distal_interphalangeal_2" index="43" alias="r_metatarsal,r_tarsal_distal_interphalangeal" default="-0.0801 0.0039 0.0732" parent="r_tarsal_proximal_interphalangeal_2" loa="2" documentation="https://en.wikipedia.org/wiki/Interphalangeal_joints_of_foot"/>
+
+This alias should be added all occurences of r_metatarsal_2, in the below lines
+
+<enumeration value="r_metatarsal_2"
+                            index="40"
+                            alias="r_midproximal"
+                            loa="2"
+                            parent="r_tarsometatarsal_2"
+                            documentation="https://en.wikipedia.org/wiki/Metatarsal_bones"/>
+
+ <enumeration value="r_metatarsal_2"
+                      index="40"
+                      alias="r_midproximal"
+                      loa="2"
+                      parent="r_tarsometatarsal_2"
+                      documentation="https://en.wikipedia.org/wiki/Metatarsal_bones"/>
+
+(there's two of them)
+
+======================================================================================
+In Table 4.5
+
+l_tarsal_proximal_interphalangeal_1 and l_tarsal_distal_interphalangeal_1 should be collapsed into l_tarsal_interphalangeal_1
+r_tarsal_proximal_interphalangeal_1 and r_tarsal_distal_interphalangeal_1 should be collapsed into r_tarsal_interphalangeal_1
+
+=======================================================================================================
+In 4.9.6.4 LOA-4 hierarchy,
+
+This line:
+
+# : l_tarsal_proximal_phalanx_2
+
+should be:
+
+l_metatarsophalangeal_2 : l_tarsal_proximal_phalanx_2
+
+=======================================================================================================
