@@ -16,7 +16,7 @@ def printValueAlias(e, valueAlias, defaulted, nodefault):
         nodefault.write(valueAlias)
         nodefault.write("\n")
 
-soup = ET.parse("/c/x3d-code/www.web3d.org/specifications/X3dUnifiedObjectModel-4.0.xml").getroot()
+soup = ET.parse("/home/yottzumm/www.web3d.org/specifications/X3dUnifiedObjectModel-4.0.xml").getroot()
 
 
 enums = soup.iter("enumeration")

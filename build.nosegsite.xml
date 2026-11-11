@@ -3,10 +3,10 @@
     <description>Builds Humanoids without Segments or Sites</description>
     <property name="fork"         value="true"/>
     <!--
-    <property name="examples"     value="/x3d-code/www.web3d.org/x3d/content/examples"/>
+	    <property name="examples"     value="/home/yottzumm/www.web3d.org/x3d/content/examples"/>
     -->
     <property name="examples"     value="examples"/>
-    <property name="classpath"     value="C:/Users/john/pythonSAI/X3DJSAIL.4.0.full.jar;."/>
+    <property name="classpath"     value="/home/yottzumm/X3DJSONLD/X3DJSAIL.4.0.full.jar;."/>
 
 <taskdef resource="net/sf/antcontrib/antcontrib.properties">
   <classpath>
@@ -25,7 +25,7 @@
 	<echo message="Don's hierarchy"/>
 	<exec executable="perl">
                 <arg value="hier2x3d.nosegsite.pl"/>
-		<arg value="/c/x3d-code/www.web3d.org/x3d/stylesheets/HAnimLOA4HierarchyTable.txt"/>
+		<arg value="/home/yottzumm/www.web3d.org/x3d/stylesheets/HAnimLOA4HierarchyTable.txt"/>
                 <arg value="./results/DonHumanoidNoSegSite.x3d"/>
         </exec>
 	<echo message="Standard hierarchies"/>

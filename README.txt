@@ -1,4 +1,4 @@
-The development was under this folder x3d-code/www.web3d.org/x3d/tools/HAnim:
+The development was under this folder ~/www.web3d.org/x3d/tools/HAnim:
 
 
 ./build.xml -- ant script for building LOA1 - LOA4, Don's Humanoid (from X3DUOM?), and corrected standard (spaces, etc.).  Create X3D HAnim models/scenes from standard hierarchies, LOA1 - LOA4, result scenes found in results. Note that LOA0 is missing.
@@ -11,7 +11,7 @@ The development was under this folder x3d-code/www.web3d.org/x3d/tools/HAnim:
 ./work.sh -- create missing/duplicate LOA4 centers  and translations report, results/FinalResult.txt, edit to replace .x3d files with your own (for now).
 
 
-./results/DonHumanoid.x3d -- result from /c/x3d-code/www.web3d.org/x3d/stylesheets/HAnimLOA4HierarchyTable.txt
+./results/DonHumanoid.x3d -- result from ~/www.web3d.org/x3d/stylesheets/HAnimLOA4HierarchyTable.txt
 ./results/Humanoid1.x3d -- result from LOA1
 ./results/Humanoid2.x3d -- result from LOA2
 ./results/Humanoid3.x3d -- result from LOA3

@@ -4,10 +4,10 @@ use warnings;
 
 use Math::Trig;
 
-#my $centerFile = "../../Lily/InputDir.old2/7_1 joint location.txt";
-# my $centerFile = "../../Lily/InputDir/lilly_7_2 joint location.txt";
-#my $centerFile = "../../Lily/InputDir.old2/lily_6_1_joint_rotate.txt";
-my $centerFile = "../../WinterAndSpring/InputDir8/7_3 joint location.txt";
+#my $centerFile = "~/WinterAndSpring/InputDir.old2/7_1 joint location.txt";
+# my $centerFile = "~/WinterAndSpring/InputDir/lilly_7_2 joint location.txt";
+#my $centerFile = "~/WinterAndSpring/InputDir.old2/lily_6_1_joint_rotate.txt";
+my $centerFile = "~/WinterAndSpring/InputDir8/7_3 joint location.txt";
 
 
 

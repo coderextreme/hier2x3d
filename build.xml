@@ -3,16 +3,18 @@
     <description>Builds, tests, and runs Validate for JSON validation.</description>
     <property name="fork"         value="true"/>
     <!--
-    <property name="examples"     value="/x3d-code/www.web3d.org/x3d/content/examples"/>
+	    <property name="examples"     value="/home/yottzumm/www.web3d.org/x3d/content/examples"/>
     -->
     <property name="examples"     value="examples"/>
-    <property name="classpath"     value="C:/Users/john/pythonSAI/X3DJSAIL.4.0.full.jar;."/>
+    <property name="classpath"     value="/home/yottzumm/X3DJSONLD/X3DJSAIL.4.0.full.jar;."/>
 
+    <!--
 <taskdef resource="net/sf/antcontrib/antcontrib.properties">
   <classpath>
     <pathelement location="C:/apache-ant-1.10.12-bin/apache-ant-1.10.12/lib/ant-contrib-1.0b3.jar"/>
   </classpath>
 </taskdef>
+    -->
 
     <target name="default" description="generate humanoids">
 	<echo message="Building humanoids with perl:"/>
@@ -62,7 +64,7 @@
 	<echo message="Don's hierarchy"/>
 	<exec executable="perl">
                 <arg value="hier2x3d.pl"/>
-		<arg value="/c/x3d-code/www.web3d.org/x3d/stylesheets/HAnimLOA4HierarchyTable.txt"/>
+		<arg value="/home/yottzumm/www.web3d.org/x3d/stylesheets/HAnimLOA4HierarchyTable.txt"/>
                 <arg value="./results/DonHumanoid.x3d"/>
                 <arg value="4"/>
         </exec>
@@ -111,7 +113,7 @@
 	<echo message="Joe Don's hierarchy"/>
 	<exec executable="perl">
                 <arg value="joehierx3d.pl"/>
-		<arg value="/c/x3d-code/www.web3d.org/x3d/stylesheets/HAnimLOA4HierarchyTable.txt"/>
+		<arg value="/home/yottzumm/www.web3d.org/x3d/stylesheets/HAnimLOA4HierarchyTable.txt"/>
                 <arg value="./results/DonHumanoidJ.x3d"/>
                 <arg value="4"/>
         </exec>
